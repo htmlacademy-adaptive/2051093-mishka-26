@@ -1,8 +1,7 @@
 # Личный проект «Мишка» 
 
 * Студент: [Анастасия Понтрягина](https://up.htmlacademy.ru/adaptive/26/user/2051093).
-* Наставник: [Сергей
-Артёмов] (https://htmlacademy.ru/profile/id228892).
+* Наставник: [Сергей Артёмов] (https://htmlacademy.ru/profile/id228892).
 
 ---
 
