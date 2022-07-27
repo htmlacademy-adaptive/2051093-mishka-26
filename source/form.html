@@ -3,7 +3,98 @@
 {% extends "./templates/_layout.twig" %}
 
 {% block main %}
-<main>
-	Контент страницы формы
+<main class="order-page">
+	<h1 class="visually-hidden">Интернет-магазин "Мишка". Форма заказа.</h1>
+	<section class="order-page__header">
+		<h2 class="order-page__title intro-title">Вязание на заказ</h2>
+	</section>
+	<section class="order">
+		<h2 class="visually-hidden">Форма заказа</h2>
+		<p class="order__text">
+			Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+		</p>
+		<form class="order__form form" action="#" method="get">
+			<fieldset class="form__filter-group">
+				<legend class="form__filter-title">Тип</legend>
+				<ul class="form__filter-list">
+					<li class="form__filter-item filter">
+						<label class="filter__label">
+							<input class="filter__input" type="radio" name="type">Аксессуар для интерьера
+						</label>
+					</li>
+					<li class="form__filter-item filter">
+						<label class="filter__label">
+							<input class="filter__input" type="radio" name="type">Детская игрушка
+						</label>
+					</li>
+				</ul>
+			</fieldset>
+			<fieldset class="form__filter-group">
+				<legend class="form__filter-title">Цвет</legend>
+				<ul class="form__filter-list">
+					<li class="form__filter-item filter">
+						<label class="filter__label">
+							<input class="filter__input" type="checkbox" name="white">Белый
+						</label>
+					</li>
+					<li class="form__filter-item filter">
+						<label class="filter__label">
+							<input class="filter__input" type="checkbox" name="grey">Серый
+						</label>
+					</li>
+					<li class="form__filter-item filter">
+						<label class="filter__label">
+							<input class="filter__input" type="checkbox" name="tiffany">Тиффани
+						</label>
+					</li>
+					<li class="form__filter-item filter">
+						<label class="filter__label">
+							<input class="filter__input" type="checkbox" name="black">Черный
+						</label>
+					</li>
+					<li class="form__filter-item filter">
+						<label class="filter__label">
+							<input class="filter__input" type="checkbox" name="pink">Розовый
+						</label>
+					</li>
+					<li class="form__filter-item filter">
+						<label class="filter__label">
+							<input class="filter__input" type="checkbox" name="orange">Оранжевый
+						</label>
+					</li>
+				</ul>
+			</fieldset>
+			<fieldset class="form__filter-group">
+				<legend class="form__filter-title">ФИО</legend>
+				<label class="form__filter-label">Имя:
+					<input class="form__filter-input" name="name" type="text" placeholder="Введите ваше имя*">
+				</label>
+				<label class="form__filter-label">Фамилия:
+					<input class="form__filter-input" name="surname" type="text" placeholder="Укажите фамилию*">
+				</label>
+				<label class="form__filter-label">Отчество:
+					<input class="form__filter-input" name="father-name" type="text" placeholder="Отчество, если желаете">
+				</label>
+			</fieldset>
+			<fieldset class="form__filter-group">
+				<legend class="form__filter-title">Тел</legend>
+				<label class="form__filter-label">
+					<input class="form__filter-input" name="phone" type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+				</label>
+			</fieldset>
+			<fieldset class="form__filter-group">
+				<legend class="form__filter-title">E-mail</legend>
+				<label class="form__filter-label">
+					<input class="form__filter-input" name="email" type="email" placeholder="Ваш Email*">
+				</label>
+			</fieldset>
+			<fieldset class="form__filter-group">
+				<legend class="form__filter-title">Доп</legend>
+				<textarea class="filter-text" name="text" cols="10" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+			</fieldset>
+			<span class="form__tip"><sup>*</sup>Поля обязательны для заполнения</span>
+			<button class="form__button button">Отправить заказ</button>
+		</form>
+	</section>
 </main>
 {% endblock %}
