@@ -18,20 +18,20 @@
 	</section>
 	<section class="product-block">
 		<h2 class="product-block__title title">Вязаные корзинки</h2>
-		<h3 class="product-block__subtitle">Товар недели</h3>
+		<span class="product-block__offer">Товар недели</span>
 		<p class="product-block__text">
 			Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх размерах.
 		</p>
 		<dl class="product-block__list">
-			<dt class="product-block__parameter">Цвет:</dt>
-			<dd class="product-block__description">тиффани/серый</dd>
-			<dt class="product-block__parameter">Диаметр:</dt>
-			<dd class="product-block__description">25 см</dd>
-			<dt class="product-block__parameter">Высота:</dt>
-			<dd class="product-block__description">15 см</dd>
+			<dt class="product-block__key">Цвет:</dt>
+			<dd class="product-block__value">тиффани/серый</dd>
+			<dt class="product-block__key">Диаметр:</dt>
+			<dd class="product-block__value">25 см</dd>
+			<dt class="product-block__key">Высота:</dt>
+			<dd class="product-block__value">15 см</dd>
 		</dl>
 		<img class="product-block__image" src="#" alt="Фото продукта.">
-		<button class="product-block__button button" type="button">Заказать</button>
+		<a class="product-block__button button" href="#">Заказать</a>
 	</section>
 	<section class="about">
 		<h2 class="about__title title">Коротко о нас:</h2>
@@ -46,26 +46,26 @@
 	</section>
 	<section class="review">
 		<h2 class="review__title title">Отзывы</h2>
-		<div class="reviews-list">
-			<blockquote class="review__item">
-				<p class="review__text text">
+		<ul class="reviews-list">
+			<li class="review__item">
+				<blockquote class="review__text text">
 					Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
-				</p>
+				</blockquote>
 				<cite class="review__author"><b>Анастасия Красильникова</b>@misssssiskras</cite>
-			</blockquote>
-			<blockquote class="review__item">
-				<p class="review__text text">
+			</li>
+			<li class="review__item">
+				<blockquote class="review__text text">
 					Я сестра молодой мамы, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
-				</p>
+				</blockquote>
 				<cite class="review__author"><b>Екатерина Красильникова</b>@misssssiskras2</cite>
-			</blockquote>
-			<blockquote class="review__item">
-				<p class="review__text text">
+			</li>
+			<li class="review__item">
+				<blockquote class="review__text text">
 					Я двоюродная сестра молодой мамы, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!
-				</p>
+				</blockquote>
 				<cite class="review__author"><b>Елена Красильникова</b>@misssssiskras3</cite>
-			</blockquote>
-		</div>
+			</li>
+		</ul>
 		<div class="review__slider-buttons">
 			<button class="review__prev" type="button">
 				<span class="visually-hidden">Предыдущий отзыв</span>
@@ -74,43 +74,23 @@
 				<span class="visually-hidden">Следующий отзыв</span>
 			</button>
 		</div>
-		<button class="review__button button" type="button">Написать</button>
+		<a class="review__button button" href="#">Написать</a>
 	</section>
 	<section class="contacts">
 		<h2 class="contacts__title title">Контакты</h2>
 		<dl class="contacts__list">
-			<dt class="contacts__parameter">e-mail:</dt>
-			<dd class="contacts__description">
+			<dt class="contacts__key">e-mail:</dt>
+			<dd class="contacts__value">
 				<a href="info@mimimishkashop.ru">info@mimimishkashop.ru</a>
 			</dd>
-			<dt class="contacts__parameter">адрес:</dt>
-			<dd class="contacts__description">
+			<dt class="contacts__key">адрес:</dt>
+			<dd class="contacts__value">
 				г. Санкт-Петербургул. Большая Конюшеннаяд. 19/8, офис 101
 			</dd>
 		</dl>
 		<div class="contacts__map"></div>
-		<button class="contacts__button button">Напишите нам</button>
+		<a class="contacts__button button" href="#">Напишите нам</a>
 	</section>
 </main>
 
-<div class="modal-container">
-	<section class="modal">
-		<h2 class="modal__title title">Добавить в корзину</h2>
-		<form class="modal__form" action="#" method="get">
-			<p class="modal__text">Выберите размер:</p>
-			<div class="modal__form-container">
-				<label class="modal__label">
-					<input type="radio" name="size"> S
-				</label>
-				<label class="modal__label">
-					<input type="radio" name="size"> M
-				</label>
-				<label class="modal__label">
-					<input type="radio" name="size"> L
-				</label>
-			</div>
-			<button class="modal__button button button--colorized" type="submit">Добавить</button>
-		</form>
-	</section>
-</div>
 {% endblock %}
