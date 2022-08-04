@@ -1,0 +1,19 @@
+.contacts {
+	display: flex;
+	flex-direction: column;
+	padding: 38px 30px;
+}
+
+.contacts__title {
+	margin-bottom: 8px;
+}
+
+.contacts__list {
+	display: grid;
+	grid-template-columns: 76px 185px;
+	margin-bottom: 42px;
+}
+
+.contacts__item {
+	padding: 20px 2px;
+}

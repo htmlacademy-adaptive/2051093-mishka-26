@@ -1,0 +1,36 @@
+.review {
+	display: flex;
+	flex-direction: column;
+	padding: 27px 30px;
+}
+
+.review__list {
+	margin: 0;
+	margin-bottom: 30px;
+	padding: 0;
+	list-style: none;
+}
+
+.review__text {
+	margin: 0;
+	margin-bottom: 18px;
+}
+
+.review__author {
+	margin: 0;
+}
+
+.review__slider-buttons {
+	display: flex;
+	margin-bottom: 38px;
+}
+
+.review__slider-button {
+	padding: 13px 38px;
+	background: var(--light-color);
+	border: 1px solid var(--border-color);
+}
+
+.review__button {
+	margin-bottom: 15px;
+}

@@ -1,0 +1,46 @@
+.offer {
+	display: flex;
+	flex-direction: column;
+	padding: 30px 30px 36px;
+}
+
+.offer__title {
+	margin-bottom: 4px;
+}
+
+.offer__promo {
+	font-size: 17px;
+	line-height: 20px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: var(--accent-color);
+}
+
+.offer__list {
+	display: grid;
+	grid-template-columns: 98px 162px;
+}
+
+.offer__item {
+	margin: 0;
+	padding: 11px 2px 14px;
+	border-bottom: 1px solid var(--border-color);
+}
+
+.offer__image {
+	display: block;
+	width: 260px;
+	height: 315px;
+	margin-bottom: 25px;
+	outline: 1px dashed #000000;
+	outline-offset: -1px;
+}
+
+.offer__price {
+	display: block;
+	margin-bottom: 25px;
+	font-size: 17px;
+	line-height: 24px;
+	font-weight: 700;
+	text-align: center;
+}

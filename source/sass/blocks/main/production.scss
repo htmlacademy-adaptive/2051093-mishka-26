@@ -1,0 +1,28 @@
+.production {
+	display: flex;
+	flex-direction: column;
+	padding: 21px 34px 33px;
+}
+
+.production__title {
+	position: relative;
+	margin-bottom: 26px;
+	padding-left: 57px;
+
+	&::before {
+		position: absolute;
+		top: 10px;
+		left: 0;
+		width: 32px;
+		height: 32px;
+		outline: 1px dashed #000000;
+		outline-offset: -1px;
+		content: "";
+	}
+}
+
+.production__text {
+	margin: 0;
+	margin-bottom: 41px;
+	font-size: 13px;
+}

@@ -1,0 +1,61 @@
+@custom-media --mobile-only (max-width: 767.9px);
+@custom-media --tablet-only (min-width:768px) and (max-width: 1149.9px);
+@custom-media --desktop-only (min-width:1150px);
+@custom-media --not-mobile (min-width:768px);
+@custom-media --not-desktop (max-width: 1149.9px);
+
+@font-face {
+	font-family: "Open Sans";
+	font-style: normal;
+	font-weight: 400;
+	src: url("../../fonts/opensans.woff2") format("woff2"), url("../../fonts/opensans.woff") format("woff");
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Open Sans";
+	font-style: normal;
+	font-weight: 700;
+	src: url("../../fonts/opensansbold.woff2") format("woff2"), url("../../fonts/opensansbold.woff") format("woff");
+	font-display: swap;
+}
+
+:root {
+	--main-font: "Open Sans", "Arial", sans-serif;
+}
+
+:root {
+	--base-color: #444444;
+	--main-color: #000000;
+	--accent-color: #63d1bb;
+}
+
+img {
+	max-width: 100%;
+	object-fit: contain;
+	object-position: center;
+}
+
+.page {
+	font-family: var(--main-font);
+	font-size: 15px;
+	line-height: 24px;
+	color: var(--base-color);
+}
+
+.page__centerer {
+	margin: 0 30px;
+}
+
+@media (--not-mobile) {
+	.page__centerer {
+		margin: 0 50px;
+	}
+}
+
+@media (--desktop) {
+	.page__centerer {
+		width: 1050px;
+		margin: 0 auto;
+	}
+}

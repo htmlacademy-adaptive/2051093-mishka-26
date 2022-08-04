@@ -1,0 +1,23 @@
+// navigation
+.nav {
+	position: relative;
+}
+
+.nav__toggle {
+	width: 40px;
+	height: 40px;
+	outline: 1px dashed #000000;
+	outline-offset: -1px;
+}
+
+.nav__wrapper {
+	position: absolute;
+	right: -130px;
+	display: flex;
+	flex-direction: column;
+}
+
+.nav__list {
+	display: flex;
+	flex-direction: column;
+}

@@ -3,6 +3,7 @@
 	font-size: 15px;
 	line-height: 24px;
 	color: var(--base-color);
+	background-color: var(--light-color);
 }
 
 .page__centerer {
@@ -16,4 +17,15 @@
 		width: 1050px;
 		margin: 0 auto;
 	}
+}
+
+.page__body {
+	display: flex;
+	flex-direction: column;
+	width: 320px;
+	margin: 0 auto;
+}
+
+.page__main {
+	flex-grow: 1;
 }

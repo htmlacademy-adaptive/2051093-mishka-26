@@ -3,10 +3,10 @@
 {% extends "./templates/_layout.twig" %}
 
 {% block main %}
-<main class="order-page">
+<main class="page__main order-page">
 	<h1 class="visually-hidden">Интернет-магазин "Мишка". Форма заказа.</h1>
-	<section class="order-page__header">
-		<h2 class="order-page__title intro-title">Вязание на заказ</h2>
+	<section class="order-page__inner">
+		<h2 class="order-page__title inner-title">Вязание на заказ</h2>
 		<div class="order">
 			<p class="order__text">
 				Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
@@ -16,13 +16,13 @@
 					<legend class="form__filter-title">Тип</legend>
 					<ul class="form__filter-list">
 						<li class="form__filter-item filter">
-							<label class="filter__label">
-								<input class="filter__input" type="radio" name="type" value="stuff">Аксессуар для интерьера
+							<label class="form__filter-label form__text filter__label">
+								<input class="filter__input filter__input--radio" type="radio" name="type" value="stuff">Аксессуар для интерьера
 							</label>
 						</li>
-						<li class="form__filter-item filter">
-							<label class="filter__label">
-								<input class="filter__input" type="radio" name="type" value="toy">Детская игрушка
+						<li class="form__filter-item  filter">
+							<label class="form__filter-label form__text filter__label">
+								<input class="filter__input filter__input--radio" type="radio" name="type" value="toy">Детская игрушка
 							</label>
 						</li>
 					</ul>
@@ -31,64 +31,64 @@
 					<legend class="form__filter-title">Цвет</legend>
 					<ul class="form__filter-list">
 						<li class="form__filter-item filter">
-							<label class="filter__label">
-								<input class="filter__input" type="checkbox" name="filter-color" value="white">Белый
+							<label class="form__filter-label form__text filter__label">
+								<input class="filter__input filter__input--checkbox" type="checkbox" name="filter-color" value="white">Белый
 							</label>
 						</li>
 						<li class="form__filter-item filter">
-							<label class="filter__label">
-								<input class="filter__input" type="checkbox" name="filter-color" value="grey">Серый
+							<label class="form__filter-label form__text filter__label">
+								<input class="filter__input filter__input--checkbox" type="checkbox" name="filter-color" value="grey">Серый
 							</label>
 						</li>
 						<li class="form__filter-item filter">
-							<label class="filter__label">
-								<input class="filter__input" type="checkbox" name="filter-color" value="tiffany">Тиффани
+							<label class="form__filter-label form__text filter__label">
+								<input class="filter__input filter__input--checkbox" type="checkbox" name="filter-color" value="tiffany">Тиффани
 							</label>
 						</li>
 						<li class="form__filter-item filter">
-							<label class="filter__label">
-								<input class="filter__input" type="checkbox" name="filter-color" value="black">Черный
+							<label class="form__filter-label form__text filter__label">
+								<input class="filter__input filter__input--checkbox" type="checkbox" name="filter-color" value="black">Черный
 							</label>
 						</li>
 						<li class="form__filter-item filter">
-							<label class="filter__label">
-								<input class="filter__input" type="checkbox" name="filter-color" value="pink">Розовый
+							<label class="form__filter-label form__text filter__label">
+								<input class="filter__input filter__input--checkbox" type="checkbox" name="filter-color" value="pink">Розовый
 							</label>
 						</li>
 						<li class="form__filter-item filter">
-							<label class="filter__label">
-								<input class="filter__input" type="checkbox" name="filter-color" value="orange">Оранжевый
+							<label class="form__filter-label form__text filter__label">
+								<input class="filter__input filter__input--checkbox" type="checkbox" name="filter-color" value="orange">Оранжевый
 							</label>
 						</li>
 					</ul>
 				</fieldset>
 				<fieldset class="form__filter-group">
 					<legend class="form__filter-title">ФИО</legend>
-					<label class="form__filter-label">Имя:
-						<input class="form__filter-input" name="name" type="text" placeholder="Введите ваше имя*">
+					<label class="form__filter-label form__text">Имя:
+						<input class="form__filter-input form__text" name="name" type="text" placeholder="Введите ваше имя*">
 					</label>
-					<label class="form__filter-label">Фамилия:
-						<input class="form__filter-input" name="surname" type="text" placeholder="Укажите фамилию*">
+					<label class="form__filter-label form__text">Фамилия:
+						<input class="form__filter-input form__text" name="surname" type="text" placeholder="Укажите фамилию*">
 					</label>
-					<label class="form__filter-label">Отчество:
-						<input class="form__filter-input" name="father-name" type="text" placeholder="Отчество, если желаете">
+					<label class="form__filter-label form__text">Отчество:
+						<input class="form__filter-input form__text" name="father-name" type="text" placeholder="Отчество, если желаете">
 					</label>
 				</fieldset>
 				<div class="form__filter-group">
 					<label class="form__filter-title">Тел
-						<input class="form__filter-input" name="phone" type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+						<input class="form__filter-input form__text" name="phone" type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
 					</label>
 				</div>
 				<div class="form__filter-group">
 					<label class="form__filter-title">E-mail
-						<input class="form__filter-input" name="email" type="email" placeholder="Ваш Email*">
+						<input class="form__filter-input form__text" name="email" type="email" placeholder="Ваш Email*">
 					</label>
 				</div>
 				<div class="form__filter-group">
 					<label class="form__filter-title" for="desire">
 						Доп<span class="visually-hidden">олнителльные пожелания</span>
 					</label>
-					<textarea class="filter-text" id="desire" name="desire" cols="10" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+					<textarea class="form__filter-text form__text" id="desire" name="desire" cols="10" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
 				</div>
 				<span class="form__tip"><sup>*</sup>Поля обязательны для заполнения</span>
 				<button class="form__button button">Отправить заказ</button>
