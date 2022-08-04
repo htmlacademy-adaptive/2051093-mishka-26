@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>Каталог товаров | Мишка | HTML Academy</title>
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="page__body">
+	<header class="page-header">
+	<a class="page-header__logo logo" href="./index.html">
+		<img class="logo-image" src="#" alt="Логотип интернет мазагина Мишка.">
+	</a>
+	<nav class="page-header__nav nav">
+		<button class="nav__toggle" type="button">
+			<span class="visually-hidden">Открыть меню</span>
+		</button>
+		<div class="nav__wrapper">
+			<ul class="nav__list site-list">
+				<li class="site-list__item">
+					<a class="site-list__link" href="./catalog.html">Каталог товаров</a>
+				</li>
+				<li class="site-list__item">
+					<a class="site-list__link" href="./form.html">Вязание на заказ</a>
+				</li>
+			</ul>
+			<ul class="nav__list user-list">
+				<li class="user-list__item">
+					<a class="user-list__link" href="javascript:void(0)">Поиск по сайту</a>
+				</li>
+				<li class="user-list__item">
+					<a class="user-list__link" href="javascript:void(0)">Корзина: пока пуста</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+</header>
+
+	<main class="page__main catalog-page">
+	<section class="catalog-page__inner">
+		<h1 class="catalog-page__title inner-title">Каталог товаров</h1>
+		<div class="catalog-page__product product">
+			<h2 class="visually-hidden">Список товаров</h2>
+			<ul class="product__list">
+				<li class="product__item product-card">
+					<img class="product-card__image" src="#" alt="">
+					<div class="product-card__container">
+						<h3 class="product-card__title product__title">
+							<a class="product-card__link" href="javascript:void(0)">Зайчик-попрыгайчик</a>
+						</h3>
+						<p class="product-card__text text">Рост 30 см, вес 200 г</p>
+						<div class="product-card__footer-conatiner">
+							<span class="product-card__price">1 200 руб.</span>
+							<a class="product-card__button" href="javascript:void(0)">
+								<span class="visually-hidden">В корзину</span>
+							</a>
+						</div>
+					</div>
+				</li>
+				<li class="product__item product-card">
+					<img class="product-card__image" src="#" alt="">
+					<div class="product-card__container">
+						<h3 class="product-card__title product__title">
+							<a class="product-card__link" href="javascript:void(0)">Корзинка для белья</a>
+						</h3>
+						<p class="product-card__text text">Диаметр 15 см, высота 10 см</p>
+						<div class="product-card__footer-conatiner">
+							<span class="product-card__price">690 руб.</span>
+							<a class="product-card__button" href="javascript:void(0)">
+								<span class="visually-hidden">В корзину</span>
+							</a>
+						</div>
+					</div>
+				</li>
+				<li class="product__item product-card">
+					<img class="product-card__image" src="#" alt="">
+					<div class="product-card__container">
+						<h3 class="product-card__title product__title">
+							<a class="product-card__link" href="javascript:void(0)">Большая корзинка для игрушек</a>
+						</h3>
+						<p class="product-card__text text">Диаметр 30 см, высота 30 см</p>
+						<div class="product-card__footer-conatiner">
+							<span class="product-card__price">1 500 руб.</span>
+							<a class="product-card__button" href="javascript:void(0)">
+								<span class="visually-hidden">В корзину</span>
+							</a>
+						</div>
+					</div>
+				</li>
+			</ul>
+			<div class="production">
+				<h3 class="production__title product__title">Процесс производства</h3>
+				<!--тут могло быть ваше видео-->
+				<p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+				<button class="production__button button">Сделать заказ</button>
+			</div>
+		</div>
+	</section>
+</main>
+
+	<footer class="page-footer">
+	<ul class="page-footer__list social">
+		<li class="social__item">
+			<a class="social__link social__link--vk" href="https://vk.com/htmlacademy" target="_blank">
+				<span class="visually-hidden">Вконтакте</span>
+			</a>
+		</li>
+		<li class="social__item">
+			<a class="social__link social__link--yt" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
+				<span class="visually-hidden">Ютуб</span>
+			</a>
+		</li>
+		<li class="social__item">
+			<a class="social__link social__link--tg" href="https://t.me/htmlacademy" target="_blank">
+				<span class="visually-hidden">Телеграм</span>
+			</a>
+		</li>
+	</ul>
+	<p class="page-footer__copyright">
+		Разработано
+		<a class="page-footer__logo" href="https://htmlacademy.ru/intensive/adaptive">
+			<span class="visually-hidden">в HTML-Академии.</span>
+		</a>
+	</p>
+</footer>
+
+	<div class="modal">
+	<section class="modal__inner cart">
+		<h2 class="cart__title title">Добавить в корзину</h2>
+		<form class="cart__form" action="https://echo.htmlacademy.ru" method="get">
+			<fieldset class="cart__filter-group">
+				<legend class="cart__text">Выберите размер:</legend>
+				<div class="cart__form-container">
+					<label class="cart__label">
+						<input type="radio" name="size" value="s"> S
+					</label>
+					<label class="cart__label">
+						<input type="radio" name="size" value="m"> M
+					</label>
+					<label class="cart__label">
+						<input type="radio" name="size" value="l"> L
+					</label>
+				</div>
+			</fieldset>
+			<button class="cart__button button button--colorized" type="submit">Добавить</button>
+		</form>
+	</section>
+</div>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+.about {
+	padding: 31px 30px;
+}
+
+.about__title {
+	margin-bottom: 28px;
+}
+
+.about__list {
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.about__item {
+	position: relative;
+	padding-top: 54px;
+	font-size: 17px;
+	line-height: 20px;
+	font-weight: 700;
+	color: var(--main-color);
+
+	&::before {
+		position: absolute;
+		top: 0;
+		left: -6px;
+		width: 55px;
+		height: 38px;
+		outline: 1px dashed #000000;
+		outline-offset: -1px;
+		content: "";
+	}
+}

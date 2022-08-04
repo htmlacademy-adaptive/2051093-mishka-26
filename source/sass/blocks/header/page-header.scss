@@ -1,0 +1,15 @@
+// page-header
+.page-header {
+	position: relative;
+	display: flex;
+	padding: 22px;
+}
+
+.page-header__logo {
+	position: absolute;
+	left: 36%;
+}
+
+.page-header__nav {
+	margin-left: auto;
+}

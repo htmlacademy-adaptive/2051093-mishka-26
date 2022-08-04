@@ -3,16 +3,16 @@
 {% extends "./templates/_layout.twig" %}
 
 {% block main %}
-<main class="catalog-page">
-	<section class="catalog-page__header">
-		<h1 class="catalog-page__title intro-title">Каталог товаров</h1>
-		<div class="product">
+<main class="page__main catalog-page">
+	<section class="catalog-page__inner">
+		<h1 class="catalog-page__title inner-title">Каталог товаров</h1>
+		<div class="catalog-page__product product">
 			<h2 class="visually-hidden">Список товаров</h2>
 			<ul class="product__list">
 				<li class="product__item product-card ">
 					<img class="product-card__image" src="#" alt="">
 					<div class="product-card__container">
-						<h3 class="product-card__title">
+						<h3 class="product-card__title product__title">
 							<a class="product-card__link" href="javascript:void(0)">Зайчик-попрыгайчик</a>
 						</h3>
 						<p class="product-card__text text">Рост 30 см, вес 200 г</p>
@@ -27,7 +27,7 @@
 				<li class="product__item product-card">
 					<img class="product-card__image" src="#" alt="">
 					<div class="product-card__container">
-						<h3 class="product-card__title">
+						<h3 class="product-card__title product__title">
 							<a class="product-card__link" href="javascript:void(0)">Корзинка для белья</a>
 						</h3>
 						<p class="product-card__text text">Диаметр 15 см, высота 10 см</p>
@@ -42,7 +42,7 @@
 				<li class="product__item product-card">
 					<img class="product-card__image" src="#" alt="">
 					<div class="product-card__container">
-						<h3 class="product-card__title">
+						<h3 class="product-card__title product__title">
 							<a class="product-card__link" href="javascript:void(0)">Большая корзинка для игрушек</a>
 						</h3>
 						<p class="product-card__text text">Диаметр 30 см, высота 30 см</p>
@@ -56,7 +56,7 @@
 				</li>
 			</ul>
 			<div class="production">
-				<h3 class="production__title">Процесс производства</h3>
+				<h3 class="production__title product__title">Процесс производства</h3>
 				<!--тут могло быть ваше видео-->
 				<p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
 				<button class="production__button button">Сделать заказ</button>

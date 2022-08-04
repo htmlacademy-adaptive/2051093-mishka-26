@@ -1,9 +1,43 @@
-{% set pageId = 0 %}
-{% set permalink = pages[pageId].path %}
-{% extends "./templates/_layout.twig" %}
+<!DOCTYPE html>
+<html class="page" lang="ru">
 
-{% block main %}
-<main class="page__main index-page">
+<head>
+	<meta charset="utf-8">
+	<title>Главная | Мишка | HTML Academy</title>
+	<link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body class="page__body">
+	<header class="page-header">
+	<a class="page-header__logo logo" href="./index.html">
+		<img class="logo-image" src="#" alt="Логотип интернет мазагина Мишка.">
+	</a>
+	<nav class="page-header__nav nav">
+		<button class="nav__toggle" type="button">
+			<span class="visually-hidden">Открыть меню</span>
+		</button>
+		<div class="nav__wrapper">
+			<ul class="nav__list site-list">
+				<li class="site-list__item">
+					<a class="site-list__link" href="./catalog.html">Каталог товаров</a>
+				</li>
+				<li class="site-list__item">
+					<a class="site-list__link" href="./form.html">Вязание на заказ</a>
+				</li>
+			</ul>
+			<ul class="nav__list user-list">
+				<li class="user-list__item">
+					<a class="user-list__link" href="javascript:void(0)">Поиск по сайту</a>
+				</li>
+				<li class="user-list__item">
+					<a class="user-list__link" href="javascript:void(0)">Корзина: пока пуста</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+</header>
+
+	<main class="page__main index-page">
 	<h1 class="visually-hidden">Интернет-магазин "Мишка". Товары для дома ручной работы.</h1>
 	<section class="intro">
 		<h2 class="intro__title inner-title">Милые штуки ручной работы для дома</h2>
@@ -23,12 +57,12 @@
 			Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх размерах.
 		</p>
 		<dl class="offer__list">
-			<dt class=" offer__item offer__key">Цвет:</dt>
-			<dd class=" offer__item offer__value">тиффани/серый</dd>
-			<dt class=" offer__item offer__key">Диаметр:</dt>
-			<dd class=" offer__item offer__value">25 см</dd>
-			<dt class=" offer__item offer__key">Высота:</dt>
-			<dd class=" offer__item offer__value">15 см</dd>
+			<dt class="offer__item offer__key">Цвет:</dt>
+			<dd class="offer__item offer__value">тиффани/серый</dd>
+			<dt class="offer__item offer__key">Диаметр:</dt>
+			<dd class="offer__item offer__value">25 см</dd>
+			<dt class="offer__item offer__key">Высота:</dt>
+			<dd class="offer__item offer__value">15 см</dd>
 		</dl>
 		<img class="offer__image" src="#" alt="Фото продукта.">
 		<span class="offer__price">Цена: 990 руб.</span>
@@ -94,4 +128,55 @@
 	</section>
 </main>
 
-{% endblock %}
+
+	<footer class="page-footer">
+	<ul class="page-footer__list social">
+		<li class="social__item">
+			<a class="social__link social__link--vk" href="https://vk.com/htmlacademy" target="_blank">
+				<span class="visually-hidden">Вконтакте</span>
+			</a>
+		</li>
+		<li class="social__item">
+			<a class="social__link social__link--yt" href="https://www.youtube.com/user/htmlacademyru" target="_blank">
+				<span class="visually-hidden">Ютуб</span>
+			</a>
+		</li>
+		<li class="social__item">
+			<a class="social__link social__link--tg" href="https://t.me/htmlacademy" target="_blank">
+				<span class="visually-hidden">Телеграм</span>
+			</a>
+		</li>
+	</ul>
+	<p class="page-footer__copyright">
+		Разработано
+		<a class="page-footer__logo" href="https://htmlacademy.ru/intensive/adaptive">
+			<span class="visually-hidden">в HTML-Академии.</span>
+		</a>
+	</p>
+</footer>
+
+	<div class="modal">
+	<section class="modal__inner cart">
+		<h2 class="cart__title title">Добавить в корзину</h2>
+		<form class="cart__form" action="https://echo.htmlacademy.ru" method="get">
+			<fieldset class="cart__filter-group">
+				<legend class="cart__text">Выберите размер:</legend>
+				<div class="cart__form-container">
+					<label class="cart__label">
+						<input type="radio" name="size" value="s"> S
+					</label>
+					<label class="cart__label">
+						<input type="radio" name="size" value="m"> M
+					</label>
+					<label class="cart__label">
+						<input type="radio" name="size" value="l"> L
+					</label>
+				</div>
+			</fieldset>
+			<button class="cart__button button button--colorized" type="submit">Добавить</button>
+		</form>
+	</section>
+</div>
+</body>
+
+</html>
