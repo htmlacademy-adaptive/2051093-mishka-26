@@ -1,16 +1,21 @@
 //Footer
-.page-footer {
+.footer {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	background-color: var(--light-accent-color);
 }
 
-.page-footer__copyright {
+.footer__list {
+	margin: 0;
+	padding: 0;
+}
+
+.footer__copyright {
 	display: flex;
 }
 
-.page-footer__logo {
+.footer__logo {
 	display: block;
 	width: 27px;
 	height: 34px;
