@@ -7,12 +7,12 @@
 	<link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body class="page__body">
-	<header class="page-header">
-	<a class="page-header__logo logo" href="./index.html">
-		<img class="logo-image" src="#" alt="Логотип интернет мазагина Мишка.">
+<body class="page__body main">
+	<header class="main__header header">
+	<a class="header__logo logo" href="./index.html">
+		<img class="logo__image" src="#" alt="Логотип интернет мазагина Мишка.">
 	</a>
-	<nav class="page-header__nav nav">
+	<nav class="header__nav nav">
 		<button class="nav__toggle" type="button">
 			<span class="visually-hidden">Открыть меню</span>
 		</button>
@@ -37,7 +37,7 @@
 	</nav>
 </header>
 
-	<main class="page__main catalog-page">
+	<main class="main__content catalog-page">
 	<section class="catalog-page__inner">
 		<h1 class="catalog-page__title inner-title">Каталог товаров</h1>
 		<div class="catalog-page__product product">
@@ -46,7 +46,7 @@
 				<li class="product__item product-card">
 					<img class="product-card__image" src="#" alt="">
 					<div class="product-card__container">
-						<h3 class="product-card__title product__title">
+						<h3 class="product-card__title product-title">
 							<a class="product-card__link" href="javascript:void(0)">Зайчик-попрыгайчик</a>
 						</h3>
 						<p class="product-card__text text">Рост 30 см, вес 200 г</p>
@@ -61,7 +61,7 @@
 				<li class="product__item product-card">
 					<img class="product-card__image" src="#" alt="">
 					<div class="product-card__container">
-						<h3 class="product-card__title product__title">
+						<h3 class="product-card__title product-title">
 							<a class="product-card__link" href="javascript:void(0)">Корзинка для белья</a>
 						</h3>
 						<p class="product-card__text text">Диаметр 15 см, высота 10 см</p>
@@ -76,7 +76,7 @@
 				<li class="product__item product-card">
 					<img class="product-card__image" src="#" alt="">
 					<div class="product-card__container">
-						<h3 class="product-card__title product__title">
+						<h3 class="product-card__title product-title">
 							<a class="product-card__link" href="javascript:void(0)">Большая корзинка для игрушек</a>
 						</h3>
 						<p class="product-card__text text">Диаметр 30 см, высота 30 см</p>
@@ -90,7 +90,7 @@
 				</li>
 			</ul>
 			<div class="production">
-				<h3 class="production__title product__title">Процесс производства</h3>
+				<h3 class="production__title product-title">Процесс производства</h3>
 				<!--тут могло быть ваше видео-->
 				<p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
 				<button class="production__button button">Сделать заказ</button>
@@ -99,8 +99,8 @@
 	</section>
 </main>
 
-	<footer class="page-footer">
-	<ul class="page-footer__list social">
+	<footer class="main__footer footer">
+	<ul class="footer__list social">
 		<li class="social__item">
 			<a class="social__link social__link--vk" href="https://vk.com/htmlacademy" target="_blank">
 				<span class="visually-hidden">Вконтакте</span>
@@ -117,15 +117,15 @@
 			</a>
 		</li>
 	</ul>
-	<p class="page-footer__copyright">
+	<p class="footer__copyright">
 		Разработано
-		<a class="page-footer__logo" href="https://htmlacademy.ru/intensive/adaptive">
+		<a class="footer__logo" href="https://htmlacademy.ru/intensive/adaptive">
 			<span class="visually-hidden">в HTML-Академии.</span>
 		</a>
 	</p>
 </footer>
 
-	<div class="modal">
+	<div class="modal modal--close">
 	<section class="modal__inner cart">
 		<h2 class="cart__title title">Добавить в корзину</h2>
 		<form class="cart__form" action="https://echo.htmlacademy.ru" method="get">

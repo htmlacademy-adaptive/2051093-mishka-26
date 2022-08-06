@@ -6,6 +6,10 @@
 	width: 100%;
 	height: 100%;
 	background: rgba(#ffffff, 0.9);
+
+	&--close {
+		display: none;
+	}
 }
 
 .modal__inner {
@@ -18,6 +22,3 @@
 }
 
 // удали, чтобы посмотреть на модалку
-.modal-close {
-	display: none;
-}
