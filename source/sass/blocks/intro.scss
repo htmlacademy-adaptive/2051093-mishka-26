@@ -3,10 +3,22 @@
 	padding: 80px 30px 324px;
 	background: var(--light-accent-color);
 	text-align: center;
+
+	@media (--not-mobile) {
+		padding: 155px 50px 480px;
+	}
 }
 
 .intro__title {
 	margin: 0;
+
+	@media (--tablet-only) {
+		padding: 0 115px;
+	}
+
+	@media (--desktop-only) {
+		padding: 0 150px;
+	}
 }
 
 .intro__list {
@@ -20,6 +32,16 @@
 	padding: 0;
 	text-align: left;
 	list-style: none;
+
+	@media (--not-mobile) {
+		left: 50px;
+		right: 50px;
+		flex-direction: row;
+
+		.intro__item {
+			flex-grow: 1;
+		}
+	}
 }
 
 .intro__link {

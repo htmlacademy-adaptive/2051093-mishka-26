@@ -1,10 +1,18 @@
 .order {
-	padding: 17px 29px 55px;
 	background: var(--light-color);
+
+	@media (--desktop-only) {
+		padding-top: 45px;
+	}
 }
 
 .order__text {
-	margin: 0;
-	margin-bottom: 29px;
+	padding: 17px 30px 15px;
 	font-size: 13px;
+
+	@media (--not-mobile) {
+		font-size: 17px;
+		line-height: 30px;
+		padding: 54px 50px 15px;
+	}
 }

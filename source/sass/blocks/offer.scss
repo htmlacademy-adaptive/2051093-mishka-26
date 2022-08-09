@@ -1,12 +1,29 @@
 .offer {
-	display: flex;
-	flex-direction: column;
+	position: relative;
 	padding: 30px 30px 36px;
+
+	@media (--tablet-only) {
+		padding: 40px 50px 50px;
+	}
+
+	@media (--desktop-only) {
+		padding: 54px 50px 70px;
+	}
 }
 
 .offer__title {
 	margin: 0;
 	margin-bottom: 4px;
+
+	@media (--tablet-only) {
+		margin-bottom: 38px;
+	}
+
+	@media (--desktop-only) {
+		position: absolute;
+		top: 115px;
+		left: 225px;
+	}
 }
 
 .offer__promo {
@@ -15,16 +32,71 @@
 	font-weight: 700;
 	text-transform: uppercase;
 	color: var(--accent-color);
+
+	@media (--not-mobile) {
+		line-height: 17px;
+		position: absolute;
+		top: 56px;
+		right: 62px;
+		width: 100px;
+		text-align: center;
+	}
+
+	@media (--desktop-only) {
+		top: 125px;
+		left: 82px;
+	}
+}
+
+.offer__container {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	outline: 1px dashed #000000;
+	outline-offset: -1px;
+
+	@media (--not-mobile) {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 0 40px;
+		grid-template-areas: "text image" "table image" "price image" "button image";
+	}
+
+	@media (--desktop-only) {
+		grid-template-columns: 2fr 3fr;
+		gap: 50px;
+		margin-left: 175px;
+	}
+}
+
+.offer__text {
+	grid-area: text;
+
+	@media (--not-mobile) {
+		margin: 0;
+	}
+
+	@media (--desktop-only) {
+		margin-top: 156px;
+	}
 }
 
 .offer__list {
 	display: grid;
 	grid-template-columns: 98px 162px;
+	margin: 0;
+
+	grid-area: table;
+
+	@media (--tablet-only) {
+		grid-template-columns: 98px 200px;
+	}
 }
 
 .offer__item {
 	margin: 0;
-	padding: 11px 2px 14px;
+	padding: 4px 2px 0;
+	line-height: 20px;
 	border-bottom: 1px solid var(--border-color);
 }
 
@@ -35,6 +107,18 @@
 	margin-bottom: 25px;
 	outline: 1px dashed #000000;
 	outline-offset: -1px;
+
+	grid-area: image;
+
+	@media (--tablet-only) {
+		width: 334px;
+		height: 404px;
+	}
+
+	@media (--desktop-only) {
+		width: 525px;
+		height: 636px;
+	}
 }
 
 .offer__price {
@@ -44,4 +128,20 @@
 	line-height: 24px;
 	font-weight: 700;
 	text-align: center;
+
+	grid-area: price;
+
+	@media (--not-mobile) {
+		margin: 0;
+		padding-top: 57px;
+	}
+}
+
+.offer__button {
+	grid-area: button;
+
+	@media (--not-mobile) {
+		display: inline-block;
+		align-self: start;
+	}
 }

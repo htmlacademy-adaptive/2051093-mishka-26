@@ -2,4 +2,8 @@
 	font-size: 17px;
 	font-weight: 700;
 	color: var(--main-color);
+
+	@media (--not-mobile) {
+		font-size: 20px;
+	}
 }

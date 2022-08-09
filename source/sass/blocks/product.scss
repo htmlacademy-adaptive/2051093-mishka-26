@@ -4,13 +4,30 @@
 	gap: 30px;
 	padding: 30px;
 	background: var(--light-color);
+
+	@media (--tablet-only) {
+		padding: 65px 50px;
+	}
+
+	@media (--desktop-only) {
+		padding: 110px 50px;
+	}
 }
 
 .product__list {
 	display: flex;
-	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
 	gap: 30px;
 	margin: 0;
 	padding: 0;
 	list-style: none;
+
+	@media (--tablet-only) {
+		gap: 54px;
+	}
+
+	@media (--desktop-only) {
+		justify-content: space-between;
+	}
 }

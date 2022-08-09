@@ -4,4 +4,14 @@
 	font-weight: 700;
 	text-align: center;
 	color: var(--main-color);
+
+	@media (--tablet-only) {
+		font-size: 43px;
+		line-height: 50px;
+	}
+
+	@media (--desktop-only) {
+		font-size: 53px;
+		line-height: 57px;
+	}
 }

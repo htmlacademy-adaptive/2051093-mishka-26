@@ -1,5 +1,9 @@
 .about {
 	padding: 31px 30px;
+
+	@media (--not-mobile) {
+		padding: 50px 225px;
+	}
 }
 
 .about__title {
@@ -14,6 +18,11 @@
 	margin: 0;
 	padding: 0;
 	list-style: none;
+
+	@media (--not-mobile) {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	}
 }
 
 .about__item {
