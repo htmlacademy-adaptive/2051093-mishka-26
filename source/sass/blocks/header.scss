@@ -3,13 +3,31 @@
 	position: relative;
 	display: flex;
 	padding: 22px;
+
+	@media (--not-mobile) {
+		padding: 32px 50px;
+	}
 }
 
 .header__logo {
 	position: absolute;
-	left: 36%;
+	left: 42%;
+	// right: 45%;
+
+	@media (--tablet-only) {
+		left: 48px;
+	}
+
+	@media (--desktop-only) {
+		left: 45%;
+	}
 }
 
 .header__nav {
 	margin-left: auto;
+
+	@media (--desktop-only) {
+		margin: 0;
+		width: 100%;
+	}
 }

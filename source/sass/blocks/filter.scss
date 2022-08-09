@@ -1,3 +1,27 @@
+.filter__label {
+	position: relative;
+	padding: 10px 0 10px 48px;
+	cursor: pointer;
+
+	@media (--not-mobile) {
+		padding-left: 55px;
+	}
+
+	&::before {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 34px;
+		height: 34px;
+		border: 2px solid var(--base-color);
+		content: "";
+	}
+
+	&:hover::before {
+		border-color: var(--accent-color);
+	}
+}
+
 .filter__input {
-	display: none;
+	opacity: 0;
 }

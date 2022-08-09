@@ -5,4 +5,12 @@
 .catalog-page__title {
 	margin: 0;
 	padding: 73px 41px;
+
+	@media (--not-mobile) {
+		padding: 101px 0 75px;
+	}
+
+	@media (--desktop-only) {
+		padding: 102px 0 95px;
+	}
 }

@@ -3,7 +3,22 @@
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	padding: 25px 30px;
 	background-color: var(--light-accent-color);
+
+	@media (--not-mobile) {
+		flex-direction: row;
+		justify-content: space-between;
+		padding: 51px 50px 58px;
+	}
+}
+
+.footer__main-logo {
+	display: none;
+
+	@media (--not-mobile) {
+		display: block;
+	}
 }
 
 .footer__list {

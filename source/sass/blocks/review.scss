@@ -1,11 +1,42 @@
 .review {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	padding: 27px 30px;
+	outline: 1px dashed #000000;
+	outline-offset: -1px;
+
+	@media (--not-mobile) {
+		display: grid;
+		grid-template-columns: auto 175px;
+		grid-template-areas: "title button" "text text";
+		padding: 82px 50px 47px;
+
+		&::before {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 350px;
+			height: 457px;
+			content: "";
+			outline: 1px dashed #000000;
+			outline-offset: -1px;
+		}
+	}
+
+	@media (--desktop-only) {
+		padding: 78px 50px 96px 225px;
+	}
 }
 
 .review__title {
 	margin: 0;
+
+	grid-area: title;
+
+	@media (--not-mobile) {
+		margin-bottom: 38px;
+	}
 }
 
 .review__list {
@@ -13,20 +44,44 @@
 	margin-bottom: 30px;
 	padding: 0;
 	list-style: none;
+
+	grid-area: text;
+
+	@media (--not-mobile) {
+		margin: 0;
+	}
 }
 
 .review__text {
 	margin: 0;
 	margin-bottom: 18px;
+	line-height: 30px;
+
+	@media (--not-mobile) {
+		margin-bottom: 61px;
+		font-size: 17px;
+	}
 }
 
 .review__author {
 	margin: 0;
+	font-size: 17px;
+
+	@media (--not-mobile) {
+		font-size: 18px;
+	}
 }
 
 .review__slider-buttons {
 	display: flex;
 	margin-bottom: 38px;
+
+	@media (--not-mobile) {
+		position: absolute;
+		bottom: 20px;
+		right: 50px;
+		margin: 0;
+	}
 }
 
 .review__slider-button {
@@ -37,4 +92,7 @@
 
 .review__button {
 	margin-bottom: 15px;
+
+	grid-area: button;
+	align-self: start;
 }

@@ -3,6 +3,7 @@
 
 <head>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<title>Главная | Мишка | HTML Academy</title>
 	<link rel="stylesheet" href="./css/style.css">
 </head>
@@ -33,6 +34,15 @@
 					<a class="user-list__link" href="javascript:void(0)">Корзина: пока пуста</a>
 				</li>
 			</ul>
+			<ul class="nav__list promo-list">
+				<li class="promo-list__item">
+					<a class="promo-list__link" href="javascript:void(0)">Новые поступления</a>
+				</li>
+				<li class="promo-list__item">
+					<a class="promo-list__link" href="javascript:void(0)">Распродажа</a>
+				</li>
+			</ul>
+			<span class="nav__delivery">Бесплатная доставка по России</span>
 		</div>
 	</nav>
 </header>
@@ -53,20 +63,22 @@
 	<section class="offer">
 		<h2 class="offer__title title">Вязаные корзинки</h2>
 		<span class="offer__promo">Товар недели</span>
-		<p class="offer__text">
-			Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх размерах.
-		</p>
-		<dl class="offer__list">
-			<dt class="offer__item offer__key">Цвет:</dt>
-			<dd class="offer__item offer__value">тиффани/серый</dd>
-			<dt class="offer__item offer__key">Диаметр:</dt>
-			<dd class="offer__item offer__value">25 см</dd>
-			<dt class="offer__item offer__key">Высота:</dt>
-			<dd class="offer__item offer__value">15 см</dd>
-		</dl>
-		<img class="offer__image" src="#" alt="Фото продукта.">
-		<span class="offer__price">Цена: 990 руб.</span>
-		<a class="offer__button button" href="javascript:void(0)">Заказать</a>
+		<div class="offer__container">
+			<p class="offer__text">
+				Экологически чистая пряжа, ручная работа. Доступны в шести расцветках и трёх размерах.
+			</p>
+			<dl class="offer__list">
+				<dt class="offer__item offer__key">Цвет:</dt>
+				<dd class="offer__item offer__value">тиффани/серый</dd>
+				<dt class="offer__item offer__key">Диаметр:</dt>
+				<dd class="offer__item offer__value">25 см</dd>
+				<dt class="offer__item offer__key">Высота:</dt>
+				<dd class="offer__item offer__value">15 см</dd>
+			</dl>
+			<img class="offer__image" src="#" alt="Фото продукта.">
+			<span class="offer__price">Цена: 990 руб.</span>
+			<a class="offer__button button" href="javascript:void(0)">Заказать</a>
+		</div>
 	</section>
 	<section class="about">
 		<h2 class="about__title title">Коротко о нас:</h2>
@@ -120,7 +132,7 @@
 			</dd>
 			<dt class="contacts__item contacts__key">адрес:</dt>
 			<dd class="contacts__item contacts__value">
-				г. Санкт-Петербург ул. Большая Конюшеннаяд. 19/8, офис 101
+				г. Санкт-Петербург<br> ул. Большая Конюшенная<br> д. 19/8, офис 101
 			</dd>
 		</dl>
 		<div class="contacts__map"></div>
@@ -130,6 +142,9 @@
 
 
 	<footer class="main__footer footer">
+	<a class="footer__main-logo logo" href="./index.html">
+		<img class="logo__image" src="#" alt="Логотип интернет мазагина Мишка.">
+	</a>
 	<ul class="footer__list social">
 		<li class="social__item">
 			<a class="social__link social__link--vk" href="https://vk.com/htmlacademy" target="_blank">
