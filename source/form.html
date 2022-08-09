@@ -12,8 +12,8 @@
 				Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
 			</p>
 			<form class="order__form form" action="https://echo.htmlacademy.ru" method="get">
-				<div class="form__filter-group">
-					<span class="form__filter-title">Тип</span>
+				<div class="form__filter-group" role="group" aria-labelledby="legend-type">
+					<span class="form__filter-title" id="legend-type">Тип</span>
 					<ul class="form__filter-list">
 						<li class="form__filter-item filter">
 							<label class="form__filter-label form__text filter__label">
@@ -27,8 +27,8 @@
 						</li>
 					</ul>
 				</div>
-				<div class="form__filter-group form__filter-group--colorized">
-					<span class="form__filter-title">Цвет</span>
+				<div class="form__filter-group form__filter-group--colorized" role="group" aria-labelledby="legend-color">
+					<span class="form__filter-title" id="legend-color">Цвет</span>
 					<ul class="form__filter-list form__filter-list--checkbox">
 						<li class="form__filter-item filter">
 							<label class="form__filter-label form__text filter__label">
@@ -62,8 +62,8 @@
 						</li>
 					</ul>
 				</div>
-				<div class="form__filter-group">
-					<span class="form__filter-title">ФИО</span>
+				<div class="form__filter-group" role="group" aria-labelledby="legend-name">
+					<span class="form__filter-title" id="legend-name">ФИО</span>
 					<div  class="form__filter-container">
 						<label class="form__filter-label form__text" for="name">Имя:</label>
 						<input class="form__filter-input form__text" name="name" id="name" type="text" placeholder="Введите ваше имя*">
