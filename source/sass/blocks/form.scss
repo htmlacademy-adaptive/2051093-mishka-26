@@ -1,16 +1,16 @@
 .form {
 	display: flex;
 	flex-direction: column;
+}
 
-	&--colorized-container {
+.form__wrapper {
+	@media (--not-mobile) {
+		background: var(--light-accent-color);
+	}
+
+	input {
 		@media (--not-mobile) {
 			background: var(--light-accent-color);
-		}
-
-		input {
-			@media (--not-mobile) {
-				background: var(--light-accent-color);
-			}
 		}
 	}
 }
