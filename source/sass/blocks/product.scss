@@ -2,15 +2,14 @@
 	display: flex;
 	flex-direction: column;
 	gap: 30px;
-	padding: 30px;
-	background: var(--light-color);
+	padding: 30px 0;
 
 	@media (--tablet-only) {
-		padding: 65px 50px;
+		padding: 65px 0;
 	}
 
 	@media (--desktop-only) {
-		padding: 110px 50px;
+		padding: 110px 0;
 	}
 }
 

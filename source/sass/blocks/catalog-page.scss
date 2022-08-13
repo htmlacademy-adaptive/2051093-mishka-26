@@ -4,7 +4,7 @@
 
 .catalog-page__title {
 	margin: 0;
-	padding: 73px 41px;
+	padding: 73px 0;
 
 	@media (--not-mobile) {
 		padding: 101px 0 75px;
@@ -13,4 +13,8 @@
 	@media (--desktop-only) {
 		padding: 102px 0 95px;
 	}
+}
+
+.catalog-page__product {
+	background: var(--light-color);
 }

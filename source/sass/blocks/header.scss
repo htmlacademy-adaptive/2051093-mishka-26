@@ -2,20 +2,22 @@
 .header {
 	position: relative;
 	display: flex;
-	padding: 22px;
+	justify-content: end;
+	padding: 22px 0;
 
 	@media (--not-mobile) {
-		padding: 32px 50px;
+		padding: 32px 0;
 	}
 }
 
 .header__logo {
 	position: absolute;
+	top: 22px;
 	left: 42%;
 	// right: 45%;
 
 	@media (--tablet-only) {
-		left: 48px;
+		left: 0;
 	}
 
 	@media (--desktop-only) {
@@ -24,8 +26,6 @@
 }
 
 .header__nav {
-	margin-left: auto;
-
 	@media (--desktop-only) {
 		margin: 0;
 		width: 100%;

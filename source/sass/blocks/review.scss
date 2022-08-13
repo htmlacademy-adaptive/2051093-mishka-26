@@ -2,20 +2,18 @@
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	padding: 27px 30px;
-	outline: 1px dashed #000000;
-	outline-offset: -1px;
+	padding: 27px 0;
 
 	@media (--not-mobile) {
 		display: grid;
 		grid-template-columns: auto 175px;
 		grid-template-areas: "title button" "text text";
-		padding: 82px 50px 47px;
+		padding: 82px 0;
 
 		&::before {
 			position: absolute;
 			top: 0;
-			left: 0;
+			left: -50px;
 			width: 350px;
 			height: 457px;
 			content: "";
@@ -25,7 +23,12 @@
 	}
 
 	@media (--desktop-only) {
-		padding: 78px 50px 96px 225px;
+		padding: 78px 0 96px 175px;
+		box-sizing: border-box;
+
+		&::before {
+			left: 0;
+		}
 	}
 }
 
@@ -54,7 +57,7 @@
 
 .review__text {
 	margin: 0;
-	margin-bottom: 18px;
+	margin-bottom: 33px;
 	line-height: 30px;
 
 	@media (--not-mobile) {
@@ -66,6 +69,7 @@
 .review__author {
 	margin: 0;
 	font-size: 17px;
+	grid-area: author;
 
 	@media (--not-mobile) {
 		font-size: 18px;
@@ -78,21 +82,32 @@
 
 	@media (--not-mobile) {
 		position: absolute;
-		bottom: 20px;
-		right: 50px;
+		bottom: 82px;
+		right: 0;
 		margin: 0;
+	}
+
+	@media (--desktop-only) {
+		bottom: 96px;
 	}
 }
 
 .review__slider-button {
+	display: inline-block;
+	flex-grow: 1;
 	padding: 13px 38px;
+	width: 26px;
+	height: 50px;
 	background: var(--light-color);
 	border: 1px solid var(--border-color);
 }
 
 .review__button {
-	margin-bottom: 15px;
+	margin-bottom: 18px;
 
 	grid-area: button;
-	align-self: start;
+
+	@media (--not-mobile) {
+		align-self: start;
+	}
 }

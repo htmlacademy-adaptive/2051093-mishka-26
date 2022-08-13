@@ -1,15 +1,18 @@
 //Footer
 .footer {
+	background-color: var(--light-accent-color);
+}
+
+.footer__container {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 25px 30px;
-	background-color: var(--light-accent-color);
+	padding: 25px 0;
 
 	@media (--not-mobile) {
 		flex-direction: row;
 		justify-content: space-between;
-		padding: 51px 50px 58px;
+		padding: 51px 0 58px;
 	}
 }
 
