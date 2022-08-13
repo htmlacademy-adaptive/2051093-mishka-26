@@ -1,6 +1,18 @@
 .form {
 	display: flex;
 	flex-direction: column;
+
+	&--colorized-container {
+		@media (--not-mobile) {
+			background: var(--light-accent-color);
+		}
+
+		input {
+			@media (--not-mobile) {
+				background: var(--light-accent-color);
+			}
+		}
+	}
 }
 
 .form__filter-group {
@@ -21,18 +33,6 @@
 		grid-template-columns: 1fr 4fr;
 		padding-right: 175px;
 		box-sizing: border-box;
-	}
-
-	&--colorized {
-		@media (--not-mobile) {
-			background: var(--light-accent-color);
-		}
-
-		input {
-			@media (--not-mobile) {
-				background: var(--light-accent-color);
-			}
-		}
 	}
 }
 
