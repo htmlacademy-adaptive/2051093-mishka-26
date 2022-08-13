@@ -8,14 +8,28 @@
 
 .page__centerer {
 	margin: 0 30px;
+	outline: 1px dashed #ff0000;
+	outline-offset: -1px;
 
 	@media (--not-mobile) {
 		margin: 0 50px;
 	}
 
-	@media (--desktop) {
+	@media (--desktop-only) {
 		width: 1050px;
 		margin: 0 auto;
+	}
+
+	&--desktop_on {
+		@media (--not-desktop) {
+			display: contents;
+		}
+	}
+
+	&--desktop_off {
+		@media (--desktop-only) {
+			display: contents;
+		}
 	}
 }
 

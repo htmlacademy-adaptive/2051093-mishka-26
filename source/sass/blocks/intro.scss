@@ -11,21 +11,21 @@
 
 .intro__title {
 	margin: 0;
-
-	@media (--tablet-only) {
-		padding: 0 115px;
-	}
-
-	@media (--desktop-only) {
-		padding: 0 150px;
-	}
 }
 
-.intro__list {
+.intro__container {
 	position: absolute;
 	left: 0;
 	right: 0;
 	bottom: 0;
+
+	@media (--mobile-only) {
+		left: -30px;
+		right: -30px;
+	}
+}
+
+.intro__list {
 	display: flex;
 	flex-direction: column;
 	margin: 0;
@@ -34,8 +34,6 @@
 	list-style: none;
 
 	@media (--not-mobile) {
-		left: 50px;
-		right: 50px;
 		flex-direction: row;
 
 		.intro__item {
@@ -66,6 +64,17 @@
 		outline: 1px dashed #000000;
 		outline-offset: -1px;
 		content: "";
+	}
+
+	@media (--not-mobile) {
+		padding: 25px 26px 34px;
+		font-size: 20px;
+		line-height: 30px;
+
+		&:hover {
+			margin-top: -5px;
+			padding-bottom: 39px;
+		}
 	}
 }
 

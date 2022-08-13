@@ -6,7 +6,7 @@
 .form__filter-group {
 	display: flex;
 	flex-direction: column;
-	padding: 15px 30px;
+	padding: 15px 0;
 	outline: 1px dashed #000000;
 	outline-offset: -1px;
 
@@ -14,11 +14,13 @@
 		display: grid;
 		grid-template-columns: 1fr 3fr;
 		align-items: baseline;
-		padding: 50px;
+		padding: 50px 0;
 	}
 
 	@media (--desktop-only) {
-		grid-template-columns: 1fr 5fr;
+		grid-template-columns: 1fr 4fr;
+		padding-right: 175px;
+		box-sizing: border-box;
 	}
 
 	&--colorized {
@@ -104,13 +106,13 @@
 
 .form__filter-text {
 	padding: 17px;
+	border: 2px solid var(--base-color);
 }
 
 .form__container {
 	display: flex;
 	flex-direction: column;
 	gap: 30px;
-	padding: 0 30px 55px;
 
 	@media (--not-mobile) {
 		flex-direction: row;
