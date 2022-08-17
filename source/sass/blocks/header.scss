@@ -2,11 +2,10 @@
 .header {
 	position: relative;
 	display: flex;
-	justify-content: end;
 	padding: 22px 0;
 
 	@media (--not-mobile) {
-		padding: 32px 0;
+		display: block;
 	}
 }
 
@@ -14,20 +13,20 @@
 	position: absolute;
 	top: 22px;
 	left: 42%;
-	// right: 45%;
 
 	@media (--tablet-only) {
 		left: 0;
 	}
 
 	@media (--desktop-only) {
-		left: 45%;
+		left: 43%;
 	}
 }
 
 .header__nav {
-	@media (--desktop-only) {
+	margin-left: auto;
+
+	@media (--not-mobile) {
 		margin: 0;
-		width: 100%;
 	}
 }
