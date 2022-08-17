@@ -1,9 +1,16 @@
 .site-list {
 	@media (--tablet-only) {
-		position: absolute;
-		left: 0;
-		bottom: -30px;
+		grid-area: site;
 		font-size: 15px;
-		z-index: 2;
+	}
+}
+
+.site-list__item {
+	@media (--tablet-only) {
+		padding: 20px 0;
+	}
+
+	@media (--desktop-only) {
+		padding: 32px 0;
 	}
 }

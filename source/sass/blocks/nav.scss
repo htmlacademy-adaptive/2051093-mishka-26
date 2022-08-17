@@ -13,11 +13,14 @@
 	display: none;
 
 	@media (--not-mobile) {
-		display: flex;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-areas: "promo user" "site delivery";
 	}
 
 	@media (--desktop-only) {
-		justify-content: space-between;
+		gap: 0 150px;
+		grid-template-areas: "site user" "promo delivery";
 	}
 }
 
@@ -44,10 +47,9 @@
 	display: none;
 
 	@media (--not-mobile) {
-		position: absolute;
-		right: 0;
-		bottom: -30px;
 		display: block;
-		z-index: 2;
+		grid-area: delivery;
+		margin-left: auto;
+		padding: 20px 0;
 	}
 }

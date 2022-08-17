@@ -2,11 +2,9 @@
 	display: none;
 
 	@media (--desktop-only) {
-		position: absolute;
-		left: 0;
-		bottom: -30px;
 		display: flex;
+		grid-area: promo;
+		padding: 20px 0;
 		font-size: 15px;
-		z-index: 2;
 	}
 }
