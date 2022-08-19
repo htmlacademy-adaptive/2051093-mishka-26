@@ -50,7 +50,7 @@
 	}
 
 	@media (--tablet-only) {
-		margin-right: 13px;
+		margin: 10px 13px 0 0;
 		justify-self: end;
 	}
 }
@@ -59,8 +59,7 @@
 	grid-area: text;
 
 	@media (--not-mobile) {
-		margin: 0;
-		margin-bottom: 48px;
+		margin: -12px 0 48px;
 		font-size: 17px;
 		line-height: 30px;
 	}

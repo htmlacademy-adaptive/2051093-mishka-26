@@ -23,11 +23,13 @@
 
 	&--button {
 		grid-area: button;
+		align-items: center;
 	}
 }
 
 .contacts__title {
 	position: relative;
+	margin: 0;
 	margin-bottom: 28px;
 
 	@media (--not-mobile) {
@@ -35,6 +37,7 @@
 
 		&::before {
 			position: absolute;
+			top: -12px;
 			right: 50px;
 			width: 47px;
 			height: 81px;
@@ -45,7 +48,7 @@
 	}
 
 	@media (--desktop-only) {
-		margin: 75px 0 34px;
+		margin: 79px 0 34px;
 
 
 		&::before {
@@ -67,7 +70,7 @@
 
 	@media (--desktop-only) {
 		grid-template-columns: 82px 250px;
-		margin-bottom: 84px;
+		gap: 33px 0;
 	}
 }
 
@@ -77,9 +80,29 @@
 	font-size: 14px;
 	line-height: 30px;
 
+	a {
+		color: inherit;
+		text-decoration: none;
+		border-bottom: 1px solid var(--accent-link-color);
+
+		&:hover {
+			color: var(--fourth-accent-color);
+			border-color: var(--fourth-accent-color);
+		}
+
+		&:active {
+			color: var(--fourth-accent-color);
+			border-color: var(--pale-link-color);
+		}
+	}
+
 	@media (--not-mobile) {
 		font-size: 17px;
-		padding: 0 2px 20px;
+		padding: 0 2px;
+	}
+
+	@media (--tablet-only) {
+		padding: 0;
 	}
 }
 
@@ -102,15 +125,17 @@
 }
 
 .contacts__button {
+	display: inline-block;
 	margin-top: 42px;
 
 	@media (--tablet-only) {
-		align-self: center;
+		margin-top: 55px;
+		padding: 16px 30px;
 	}
 
 	@media (--desktop-only) {
 		margin: 0;
 		margin-right: auto;
-		padding: 16px 26px;
+		padding: 16px 36px;
 	}
 }

@@ -51,19 +51,31 @@
 	color: var(--light-color);
 	text-decoration: none;
 
-	&:hover {
-		padding-bottom: 36px;
-	}
-
 	&::after {
 		position: absolute;
 		top: 21px;
 		right: 27px;
 		width: 60px;
 		height: 62px;
+		background: var(--accent-dark-color);
+		opacity: 0.5;
 		outline: 1px dashed #000000;
 		outline-offset: -1px;
 		content: "";
+	}
+
+	&:hover {
+		padding-bottom: 36px;
+
+		&::after {
+			opacity: 0.7;
+		}
+	}
+
+	&:active {
+		&::after {
+			opacity: 0.3;
+		}
 	}
 
 	@media (--not-mobile) {
@@ -84,12 +96,20 @@
 	&:hover {
 		background: var(--third-accent-color);
 	}
+
+	&:active {
+		background: var(--third-accent-color);
+	}
 }
 
 .intro__link--toy {
 	background: var(--sec-accent-color);
 
 	&:hover {
+		background: var(--fourth-accent-color);
+	}
+
+	&:active {
 		background: var(--fourth-accent-color);
 	}
 }

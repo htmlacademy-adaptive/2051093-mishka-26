@@ -1,34 +1,69 @@
 .production {
-	position: relative;
 	display: flex;
 	flex-direction: column;
-	padding: 21px 34px 33px;
 	box-sizing: border-box;
+	border: 1px solid var(--border-color);
 
 	@media (--desktop-only) {
-		padding: 96px 57px 60px 763px;
-		min-height: 455px;
+		display: grid;
+		grid-template-columns: 683px auto;
+		grid-template-areas: "video title" "video content";
+		width: 100%;
 	}
+}
+
+.production__container {
+	display: flex;
+	flex-direction: column;
+	padding: 21px 30px;
+	grid-area: content;
+
+	@media (--tablet-only) {
+		padding: 12px 40px;
+	}
+
+	@media (--desktop-only) {
+		padding: 13px 57px 13px 79px;
+	}
+}
+
+.production__container--title {
+	grid-area: title;
 }
 
 .production__title {
 	position: relative;
-	margin: 0;
-	margin-bottom: 26px;
-	padding-left: 57px;
+	margin: 0 0 5px;
+	padding-left: 61px;
+
+	@media (--not-mobile) {
+		margin: 29px 0 0;
+		padding-left: 67px;
+	}
+
+	@media (--desktop-only) {
+		margin-top: 83px;
+	}
 
 	&::before {
 		position: absolute;
-		top: 0;
-		left: 0;
+		top: 10px;
+		left: 4px;
 		width: 32px;
 		height: 32px;
+		background: var(--accent-color);
 		outline: 1px dashed #000000;
 		outline-offset: -1px;
 		content: "";
 
+		@media (--tablet-only) {
+			top: 0;
+			left: 2px;
+		}
+
 		@media (--desktop-only) {
 			top: -59px;
+			left: 0;
 		}
 	}
 
@@ -41,7 +76,6 @@
 	align-self: center;
 	width: 260px;
 	height: 150px;
-	margin-bottom: 35px;
 	outline: 1px dashed #000000;
 	outline-offset: -1px;
 
@@ -49,25 +83,38 @@
 		order: -1;
 		width: 668px;
 		height: 450px;
-		margin-bottom: 41px;
 	}
 
 	@media (--desktop-only) {
-		position: absolute;
-		top: 0;
-		left: 0;
 		width: 683px;
 		height: 455px;
+		grid-area: video;
 	}
 }
 
 .production__text {
-	margin: 0;
-	margin-bottom: 40px;
+	margin: 14px 0 40px;
 	font-size: 13px;
 
 	@media (--not-mobile) {
 		font-size: 15px;
+		margin-top: 0;
+	}
+
+	@media (--desktop-only) {
 		margin-bottom: 50px;
+	}
+}
+
+.production__button {
+	margin: 0 4px 12px;
+	line-height: 16px;
+
+	@media (--tablet-only) {
+		margin: 0 2px 34px;
+	}
+
+	@media (--desktop-only) {
+		margin: 0 0 47px;
 	}
 }

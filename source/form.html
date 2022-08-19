@@ -17,7 +17,7 @@
 					<ul class="form__filter-list">
 						<li class="form__filter-item filter">
 							<label class="form__filter-label form__text filter__label">
-								<input class="filter__input filter__input--radio" type="radio" name="type" value="stuff">Аксессуар для интерьера
+								<input class="filter__input filter__input--big-line filter__input--radio" type="radio" name="type" value="stuff">Аксессуар для интерьера
 							</label>
 						</li>
 						<li class="form__filter-item  filter">
@@ -67,24 +67,27 @@
 				<div class="form__filter-group page__centerer" role="group" aria-labelledby="legend-name">
 					<span class="form__filter-title" id="legend-name">ФИО</span>
 					<div  class="form__filter-container">
-						<label class="form__filter-label form__text" for="name">Имя:</label>
-						<input class="form__filter-input form__text" name="name" id="name" type="text" placeholder="Введите ваше имя*">
-						<label class="form__filter-label form__text" for="surname">Фамилия:</label>
-						<input class="form__filter-input form__text" name="surname" id="surname" type="text" placeholder="Укажите фамилию*">
-						<label class="form__filter-label form__text" for="father-name">Отчество:</label>
-						<input class="form__filter-input form__text" name="father-name" id="father-name" type="text" placeholder="Отчество, если желаете">
+						<label class="form__filter-label form__text">Имя:
+							<input class="form__filter-input form__text" name="name" type="text" placeholder="Введите ваше имя*">
+						</label>
+						<label class="form__filter-label form__text">Фамилия:
+							<input class="form__filter-input form__text" name="surname" type="text" placeholder="Укажите фамилию*">
+						</label>
+						<label class="form__filter-label form__text">Отчество:
+							<input class="form__filter-input form__text" name="father-name" id="father-name" type="text" placeholder="Отчество, если желаете">
+						</label>
 					</div>
 				</div>
 				<div class="form__wrapper">
 					<div class="form__filter-group page__centerer">
 						<label class="form__filter-title" for="tel">Тел</label>
-						<input class="form__filter-input form__text" name="phone" id="tel" type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
-					</div>
-				</div>
-				<div class="form__wrapper">
-					<div class="form__filter-group page__centerer">
-						<label class="form__filter-title" for="email">E-mail</label>
-						<input class="form__filter-input form__text" name="email" id="email" type="email" placeholder="Ваш Email*">
+						<div class="form__filter-icon">
+							<input class="form__filter-input form__text" name="phone" id="tel" type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+						</div>
+						<label class="form__filter-title form__filter-title--short-line" for="email">E-mail</label>
+						<div class="form__filter-icon">
+							<input class="form__filter-input form__text" name="email" id="email" type="email" placeholder="Ваш Email*">
+						</div>
 					</div>
 				</div>
 				<div class="form__filter-group page__centerer">

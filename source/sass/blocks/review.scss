@@ -8,7 +8,7 @@
 		display: grid;
 		grid-template-columns: auto 175px;
 		grid-template-areas: "title button" "text text";
-		padding: 82px 0;
+		padding: 82px 0 47px;
 
 		&::before {
 			position: absolute;
@@ -38,7 +38,7 @@
 	grid-area: title;
 
 	@media (--not-mobile) {
-		margin-bottom: 38px;
+		margin-bottom: 40px;
 	}
 }
 
@@ -64,6 +64,10 @@
 		margin-bottom: 61px;
 		font-size: 17px;
 	}
+
+	@media (--desktop-only) {
+		margin-bottom: 44px;
+	}
 }
 
 .review__author {
@@ -74,6 +78,10 @@
 	@media (--not-mobile) {
 		font-size: 18px;
 	}
+
+	@media (--tablet-only) {
+		margin-bottom: 10px;
+	}
 }
 
 .review__slider-buttons {
@@ -82,13 +90,14 @@
 
 	@media (--not-mobile) {
 		position: absolute;
-		bottom: 82px;
-		right: 0;
+		bottom: 60px;
+		right: 16px;
 		margin: 0;
 	}
 
 	@media (--desktop-only) {
 		bottom: 96px;
+		right: 18px;
 	}
 }
 
@@ -98,8 +107,20 @@
 	padding: 13px 38px;
 	width: 26px;
 	height: 50px;
-	background: var(--light-color);
+	background: var(--main-color);
 	border: 1px solid var(--border-color);
+
+	&:hover {
+		opacity: 0.6;
+	}
+
+	&:active {
+		opacity: 0.3;
+	}
+
+	@media (--not-mobile) {
+		margin-left: 37px;
+	}
 }
 
 .review__button {
