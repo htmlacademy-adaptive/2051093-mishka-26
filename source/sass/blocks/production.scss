@@ -10,6 +10,16 @@
 		grid-template-areas: "video title" "video content";
 		width: 100%;
 	}
+
+	&:hover,
+	&:focus-within {
+		box-shadow: 0 6px 10px var(--pale-border-color);
+	}
+
+	&:active,
+	&:focus-within {
+		box-shadow: 0 3px 5px var(--pale-border-color);
+	}
 }
 
 .production__container {
@@ -29,46 +39,37 @@
 
 .production__container--title {
 	grid-area: title;
+
+	@media (--mobile-only) {
+		padding-right: 0;
+	}
 }
 
 .production__title {
-	position: relative;
+	display: flex;
+	gap: 25px;
+	align-items: center;
 	margin: 0 0 5px;
-	padding-left: 61px;
 
 	@media (--not-mobile) {
 		margin: 29px 0 0;
-		padding-left: 67px;
+		gap: 33px;
 	}
 
 	@media (--desktop-only) {
-		margin-top: 83px;
+		margin-top: 47px;
+		flex-direction: column;
+		gap: 27px;
+		align-items: flex-start;
 	}
 
 	&::before {
-		position: absolute;
-		top: 10px;
-		left: 4px;
 		width: 32px;
 		height: 32px;
 		background: var(--accent-color);
 		outline: 1px dashed #000000;
 		outline-offset: -1px;
 		content: "";
-
-		@media (--tablet-only) {
-			top: 0;
-			left: 2px;
-		}
-
-		@media (--desktop-only) {
-			top: -59px;
-			left: 0;
-		}
-	}
-
-	@media (--desktop-only) {
-		padding-left: 0;
 	}
 }
 

@@ -35,6 +35,9 @@
 }
 
 .form__filter-title {
+	display: flex;
+	gap: 20px;
+	align-items: center;
 	margin: 0;
 	margin-bottom: 25px;
 	font-size: 17px;
@@ -43,23 +46,15 @@
 	text-transform: uppercase;
 	color: var(--accent-color);
 
-	@media (--mobile-only) {
-		position: relative;
 
-		&::after {
-			position: absolute;
-			top: 7px;
-			right: 0;
-			min-width: 200px;
-			width: 75%;
-			height: 1px;
-			background: var(--accent-link-color);
-			content: "";
-		}
+	&::after {
+		flex-grow: 1;
+		height: 1px;
+		background: var(--accent-link-color);
+		content: "";
 
-		&--short-line::after {
-			min-width: 182px;
-			width: 70%;
+		@media (--not-mobile) {
+			display: none;
 		}
 	}
 

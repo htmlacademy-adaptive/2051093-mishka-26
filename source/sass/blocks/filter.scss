@@ -1,31 +1,25 @@
-.filter {
-	padding-left: 50px;
+.filter__label {
+	display: flex;
+	align-items: center;
+	gap: 23px;
 
 	@media (--not-mobile) {
-		padding-left: 72px;
+		gap: 30px;
 	}
-}
 
-.filter__label {
-	position: relative;
+	&--radio {
+		gap: 19px;
+
+		@media (--not-mobile) {
+			gap: 26px;
+		}
+	}
 }
 
 .filter__input {
-	position: absolute;
-	top: -10px;
-	left: -67px;
+	position: relative;
+	margin: 0;
 	appearance: none;
-
-	@media (--mobile-only) {
-		&--big-line {
-			top: 0;
-		}
-	}
-
-	@media (--not-mobile) {
-		top: -13px;
-		left: -77px;
-	}
 
 	&::before {
 		box-sizing: border-box;
