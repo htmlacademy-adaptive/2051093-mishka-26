@@ -1,0 +1,32 @@
+@mixin adaptive-bg($name, $format) {
+	@each $viewport in getviewports($name) {
+		@media (--#{$viewport}-only) {
+			$dppx: 1;
+			$url: null;
+
+			@while $dppx <= getmaxdppx($name) {
+				$url: $url, url("../../img/#{$name}-#{$viewport}@#{$dppx}x.#{$format}") #{$dppx}x;
+				$dppx: $dppx + 1;
+			}
+			background-image: image-set($url);
+		}
+	}
+}
+
+@mixin support-bg($name) {
+	$format: getext($name);
+	$image-set-webp: image-set(url("image.webp") 1x);
+	$image-set-avif: image-set(url("image.avif") 1x type("image/avif"));
+
+	@include adaptive-bg($name, $format);
+
+	@if not isdev() {
+		@supports ((background: #{$image-set-webp})) and (not (background: #{$image-set-avif})) {
+			@include adaptive-bg($name, webp);
+		}
+
+		@supports (background: #{$image-set-avif}) {
+			@include adaptive-bg($name, avif);
+		}
+	}
+}
