@@ -16,9 +16,15 @@
 			left: -50px;
 			width: 350px;
 			height: 457px;
+			background: url("../../img/review_tablet@1x.jpg") no-repeat center / cover;
 			content: "";
 			outline: 1px dashed #000000;
 			outline-offset: -1px;
+			z-index: -1;
+
+			@media (min-resolution: 2dppx) {
+				background-image: url("../../img/review_tablet@2x.jpg");
+			}
 		}
 	}
 

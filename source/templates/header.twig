@@ -1,6 +1,10 @@
 <header class="main__header header page__centerer">
 	<a class="header__logo logo" href="./index.html">
-		<img class="logo__image"  src="#"  alt="Логотип интернет мазагина Мишка.">
+		<picture>
+			<source media="(min-width: 1150px)" srcset="img/header-logo_desktop.svg">
+			<source media="(min-width: 768px)" srcset="img/header-logo_tablet.svg">
+			<img class="logo__image"  src="img/header-logo_mobile.svg" width="85" height="34" alt="Логотип интернет мазагина Мишка.">
+		</picture>
 	</a>
 	<nav class="header__nav nav">
 		<button class="nav__toggle" type="button">

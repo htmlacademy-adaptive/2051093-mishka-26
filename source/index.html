@@ -32,7 +32,13 @@
 			<dt class=" offer__item offer__key">Высота:</dt>
 			<dd class=" offer__item offer__value">15 см</dd>
 		</dl>
-		<img class="offer__image" src="#" alt="Фото продукта.">
+		<div class="offer__container">
+			<picture>
+				<source media="(min-width: 1150px)" srcset="img/offer_desktop@1x.jpg 1x, img/offer_desktop@2x.jpg 2x">
+				<source media="(min-width: 768px)" srcset="img/offer_tablet@1x.jpg 1x, img/offer_tablet@2x.jpg 2x">
+				<img class="offer__image" src="img/offer_mobile@1x.jpg" srcset="img/offer_mobile@2x.jpg 2x" width="260" height="315" alt="Фото продукта.">
+			</picture>
+		</div>
 		<span class="offer__price">Цена: 990 руб.</span>
 		<a class="offer__button button" href="javascript:void(0)">Заказать</a>
 	</section>
