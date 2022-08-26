@@ -7,9 +7,3 @@ $tablet-only: "(min-width: #{$breakpoint-tablet}) and (max-width: #{$breakpoint-
 $desktop-only: "(min-width: #{$breakpoint-desktop})";
 $not-mobile: "(min-width: #{$breakpoint-tablet})";
 $not-desktop: "(max-width: #{$breakpoint-desktop - $breakpoint-gap})";
-
-@custom-media --mobile-only (max-width: #{$breakpoint-tablet - $breakpoint-gap});
-@custom-media --tablet-only (min-width: #{$breakpoint-tablet}) and (max-width: #{$breakpoint-desktop - $breakpoint-gap});
-@custom-media --desktop-only (min-width: #{$breakpoint-desktop});
-@custom-media --not-mobile (min-width: #{$breakpoint-tablet});
-@custom-media --not-desktop (max-width: #{$breakpoint-desktop - $breakpoint-gap});

@@ -1,7 +1,7 @@
 .promo-list {
 	display: none;
 
-	@media (--desktop-only) {
+	@media #{$desktop-only} {
 		display: flex;
 		grid-area: promo;
 		padding: 20px 0;

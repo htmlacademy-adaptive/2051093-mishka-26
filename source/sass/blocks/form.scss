@@ -4,12 +4,12 @@
 }
 
 .form__wrapper {
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		background: var(--light-accent-color);
 	}
 
 	input {
-		@media (--not-mobile) {
+		@media #{$not-mobile} {
 			background: var(--light-accent-color);
 		}
 	}
@@ -21,13 +21,13 @@
 	outline: 1px dashed #000000;
 	outline-offset: -1px;
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		grid-template-columns: 1fr 3fr;
 		align-items: baseline;
 		padding: 50px 0;
 	}
 
-	@media (--desktop-only) {
+	@media #{$desktop-only} {
 		grid-template-columns: 1fr 4fr;
 		padding-right: 175px;
 		box-sizing: border-box;
@@ -53,12 +53,12 @@
 		background: var(--accent-link-color);
 		content: "";
 
-		@media (--not-mobile) {
+		@media #{$not-mobile} {
 			display: none;
 		}
 	}
 
-	@media (--desktop-only) {
+	@media #{$desktop-only} {
 		padding-left: 47px;
 	}
 }
@@ -72,11 +72,11 @@
 
 
 	&--checkbox {
-		@media (--not-mobile) {
+		@media #{$not-mobile} {
 			grid-template-columns: 1fr 1fr;
 		}
 
-		@media (--desktop-only) {
+		@media #{$desktop-only} {
 			grid-template-columns: 1fr 1fr 1fr;
 		}
 	}
@@ -91,7 +91,7 @@
 	line-height: 18px;
 	color: var(--main-color);
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		font-size: 19px;
 	}
 }
@@ -105,7 +105,7 @@
 	font-weight: 700;
 	margin-top: 16px;
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		display: flex;
 		gap: 25px;
 		align-items: baseline;
@@ -126,12 +126,12 @@
 		content: "";
 		z-index: 100;
 
-		@media (--not-mobile) {
+		@media #{$not-mobile} {
 			top: 17px;
 			right: 22px;
 		}
 
-		@media (--desktop-only) {
+		@media #{$desktop-only} {
 			right: 4px;
 		}
 	}
@@ -162,7 +162,7 @@
 		border-color: var(--accent-link-color);
 	}
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		padding: 17px;
 	}
 }
@@ -187,13 +187,13 @@
 	flex-direction: column;
 	gap: 30px;
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: baseline;
 	}
 
-	@media (--desktop-only) {
+	@media #{$desktop-only} {
 		padding: 0 175px;
 		box-sizing: border-box;
 	}
@@ -203,7 +203,7 @@
 	font-size: 14px;
 	line-height: 16px;
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		font-size: 17px;
 		line-height: 30px;
 		order: 2;
@@ -211,7 +211,7 @@
 }
 
 .form__button {
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		padding: 18px 32px;
 	}
 }

@@ -32,13 +32,13 @@
 	align-items: center;
 	padding: 25px 0;
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		flex-direction: row;
 		justify-content: space-between;
 		padding: 51px 0 58px;
 	}
 
-	@media (--mobile-only) {
+	@media #{$mobile-only} {
 		position: relative;
 
 		&::before {
@@ -56,7 +56,7 @@
 .footer__main-logo {
 	display: none;
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		display: block;
 
 		&::after {
@@ -69,7 +69,7 @@
 	margin: 0;
 	padding: 0;
 
-	@media (--mobile-only) {
+	@media #{$mobile-only} {
 		padding-bottom: 28px;
 	}
 }
@@ -84,7 +84,7 @@
 	font-weight: 700;
 	color: var(--main-color);
 
-	@media (--mobile-only) {
+	@media #{$mobile-only} {
 		margin: 22px 0 0;
 	}
 }

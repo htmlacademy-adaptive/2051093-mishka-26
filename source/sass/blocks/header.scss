@@ -17,7 +17,7 @@
 		}
 	}
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		display: block;
 		padding: 0;
 	}
@@ -29,11 +29,11 @@
 	left: 36%;
 
 
-	@media (--tablet-only) {
+	@media #{$tablet-only} {
 		left: 0;
 	}
 
-	@media (--desktop-only) {
+	@media #{$desktop-only} {
 		left: 43%;
 	}
 }
@@ -41,7 +41,7 @@
 .header__nav {
 	margin-left: auto;
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		margin: 0;
 	}
 }

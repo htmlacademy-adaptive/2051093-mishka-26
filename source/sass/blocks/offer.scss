@@ -3,7 +3,7 @@
 	flex-direction: column;
 	padding: 30px 0 36px;
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		display: grid;
 		grid-template-columns: 2fr 1fr 1fr;
 		grid-template-areas: "title title promo" "text image image" "table image image" "price image image" "button image image";
@@ -11,7 +11,7 @@
 		padding: 40px 0 50px;
 	}
 
-	@media (--desktop-only) {
+	@media #{$desktop-only} {
 		grid-template-columns: 1fr 2fr 3fr;
 		grid-template-areas: "promo title image" "promo text image" "promo table image" "promo price image" "promo button image";
 		padding: 54px 0 70px;
@@ -23,11 +23,11 @@
 	margin-bottom: 4px;
 	grid-area: title;
 
-	@media (--tablet-only) {
+	@media #{$tablet-only} {
 		margin-bottom: 38px;
 	}
 
-	@media (--desktop-only) {
+	@media #{$desktop-only} {
 		grid-column: 2/4;
 		margin: 64px 0 35px;
 	}
@@ -41,7 +41,7 @@
 	color: var(--accent-color);
 	grid-area: promo;
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		margin-top: 74px;
 		width: 100px;
 		line-height: 17px;
@@ -49,7 +49,7 @@
 		justify-self: center;
 	}
 
-	@media (--tablet-only) {
+	@media #{$tablet-only} {
 		margin: 10px 13px 0 0;
 		justify-self: end;
 	}
@@ -58,13 +58,13 @@
 .offer__text {
 	grid-area: text;
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		margin: -12px 0 48px;
 		font-size: 17px;
 		line-height: 30px;
 	}
 
-	@media (--desktop-only) {
+	@media #{$desktop-only} {
 		margin-bottom: 60px;
 	}
 }
@@ -77,12 +77,12 @@
 
 	grid-area: table;
 
-	@media (--tablet-only) {
+	@media #{$tablet-only} {
 		grid-template-columns: 30% 60%;
 		margin-bottom: 57px;
 	}
 
-	@media (--desktop-only) {
+	@media #{$desktop-only} {
 		margin-bottom: 109px;
 	}
 }
@@ -107,14 +107,14 @@
 	outline: 1px dashed #000000;
 	outline-offset: -1px;
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		width: 334px;
 		height: 404px;
 		margin: 0;
 		margin-left: auto;
 	}
 
-	@media (--desktop-only) {
+	@media #{$desktop-only} {
 		width: 525px;
 		height: 636px;
 	}
@@ -130,7 +130,7 @@
 
 	grid-area: price;
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		margin-bottom: 33px;
 		font-size: 20px;
 	}
@@ -139,7 +139,7 @@
 .offer__button {
 	grid-area: button;
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		display: inline-block;
 		width: 80%;
 	}

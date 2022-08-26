@@ -4,23 +4,23 @@
 	background: var(--light-accent-color) url("../../img/intro-mobile@1x.jpg") no-repeat center/cover;
 	text-align: center;
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		padding-bottom: 0;
 		background-image: url("../../img/intro-tablet@1x.jpg");
 	}
 
-	@media (--desktop-only) {
+	@media #{$desktop-only} {
 		background-image: url("../../img/intro-desktop@1x.jpg");
 	}
 
 	@media (min-resolution: 2dppx) {
 		background-image: url("../../img/intro-mobile@2x.jpg");
 
-		@media (--not-mobile) {
+		@media #{$not-mobile} {
 			background-image: url("../../img/intro-tablet@2x.jpg");
 		}
 
-		@media (--desktop-only) {
+		@media #{$desktop-only} {
 			background-image: url("../../img/intro-desktop@2x.jpg");
 		}
 	}
@@ -30,7 +30,7 @@
 	margin: 0;
 	padding: 80px 30px 324px;
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		padding: 155px 50px 480px;
 	}
 }
@@ -41,7 +41,7 @@
 	right: 0;
 	bottom: 0;
 
-	@media (--mobile-only) {
+	@media #{$mobile-only} {
 		left: -30px;
 		right: -30px;
 	}
@@ -55,7 +55,7 @@
 	text-align: left;
 	list-style: none;
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		flex-direction: row;
 
 		.intro__item {
@@ -100,7 +100,7 @@
 		}
 	}
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		padding: 25px 26px 34px;
 		font-size: 20px;
 		line-height: 30px;

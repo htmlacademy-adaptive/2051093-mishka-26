@@ -1,13 +1,13 @@
 .user-list {
 	grid-area: user;
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		margin-left: auto;
 	}
 }
 
 .user-list__item {
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		padding: 32px 0;
 		border-left: 1px solid var(--pale-border-color);
 	}
@@ -16,7 +16,7 @@
 .user-list__link {
 	position: relative;
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		padding-left: 82px;
 	}
 
@@ -31,7 +31,7 @@
 		outline: 1px dashed #000000;
 		outline-offset: -1px;
 
-		@media (--not-mobile) {
+		@media #{$not-mobile} {
 			left: 32px;
 		}
 	}
@@ -48,7 +48,7 @@
 }
 
 .user-list__text--hidden {
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		display: none;
 	}
 }

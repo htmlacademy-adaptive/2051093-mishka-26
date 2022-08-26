@@ -5,13 +5,13 @@
 	outline: 1px dashed #000000;
 	outline-offset: -1px;
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		display: none;
 	}
 }
 
 .nav__wrapper {
-	@media (--mobile-only) {
+	@media #{$mobile-only} {
 		position: absolute;
 		top: 79px;
 		left: -30px;
@@ -26,13 +26,13 @@
 		}
 	}
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		grid-template-areas: "user user" "site delivery";
 	}
 
-	@media (--desktop-only) {
+	@media #{$desktop-only} {
 		gap: 0 150px;
 		grid-template-areas: "site user" "promo delivery";
 	}
@@ -47,7 +47,7 @@
 	font-weight: 700;
 	list-style: none;
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		flex-direction: row;
 	}
 }
@@ -61,7 +61,7 @@
 }
 
 .nav__link {
-	@media (--mobile-only) {
+	@media #{$mobile-only} {
 		padding-left: 46px;
 	}
 }
@@ -69,7 +69,7 @@
 .nav__delivery {
 	display: none;
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		display: block;
 		grid-area: delivery;
 		margin-left: auto;

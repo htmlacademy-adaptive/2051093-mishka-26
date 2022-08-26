@@ -10,7 +10,7 @@
 	background: var(--light-color);
 	border: 2px solid var(--base-color);
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		font-size: 17px;
 	}
 

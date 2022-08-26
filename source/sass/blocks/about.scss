@@ -1,11 +1,11 @@
 .about {
 	padding: 31px 0;
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		padding: 43px 0 83px;
 	}
 
-	@media (--desktop-only) {
+	@media #{$desktop-only} {
 		padding: 68px 0 90px;
 	}
 }
@@ -14,11 +14,11 @@
 	margin: 0;
 	margin-bottom: 28px;
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		margin-bottom: 41px;
 	}
 
-	@media (--desktop-only) {
+	@media #{$desktop-only} {
 		margin-left: 175px;
 	}
 }
@@ -30,12 +30,12 @@
 	padding: 0;
 	list-style: none;
 
-	@media (--mobile-only) {
+	@media #{$mobile-only} {
 		display: flex;
 		flex-wrap: wrap;
 	}
 
-	@media (--desktop-only) {
+	@media #{$desktop-only} {
 		margin: 0 175px;
 	}
 }
@@ -49,13 +49,13 @@
 	font-weight: 700;
 	color: var(--main-color);
 
-	@media (--mobile-only) {
+	@media #{$mobile-only} {
 		&:nth-of-type(2n + 2) {
 			order: 1;
 		}
 	}
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		font-size: 20px;
 		line-height: 22px;
 	}

@@ -4,7 +4,7 @@
 	box-sizing: border-box;
 	border: 1px solid var(--border-color);
 
-	@media (--desktop-only) {
+	@media #{$desktop-only} {
 		display: grid;
 		grid-template-columns: 683px auto;
 		grid-template-areas: "video title" "video content";
@@ -28,11 +28,11 @@
 	padding: 21px 30px;
 	grid-area: content;
 
-	@media (--tablet-only) {
+	@media #{$tablet-only} {
 		padding: 12px 40px;
 	}
 
-	@media (--desktop-only) {
+	@media #{$desktop-only} {
 		padding: 13px 57px 13px 79px;
 	}
 }
@@ -40,7 +40,7 @@
 .production__container--title {
 	grid-area: title;
 
-	@media (--mobile-only) {
+	@media #{$mobile-only} {
 		padding-right: 0;
 	}
 }
@@ -51,12 +51,12 @@
 	align-items: center;
 	margin: 0 0 5px;
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		margin: 29px 0 0;
 		gap: 33px;
 	}
 
-	@media (--desktop-only) {
+	@media #{$desktop-only} {
 		margin-top: 47px;
 		flex-direction: column;
 		gap: 27px;
@@ -80,13 +80,13 @@
 	outline: 1px dashed #000000;
 	outline-offset: -1px;
 
-	@media (--tablet-only) {
+	@media #{$tablet-only} {
 		order: -1;
 		width: 668px;
 		height: 450px;
 	}
 
-	@media (--desktop-only) {
+	@media #{$desktop-only} {
 		width: 683px;
 		height: 455px;
 		grid-area: video;
@@ -97,12 +97,12 @@
 	margin: 14px 0 40px;
 	font-size: 13px;
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		font-size: 15px;
 		margin-top: 0;
 	}
 
-	@media (--desktop-only) {
+	@media #{$desktop-only} {
 		margin-bottom: 50px;
 	}
 }
@@ -111,11 +111,11 @@
 	margin: 0 4px 12px;
 	line-height: 16px;
 
-	@media (--tablet-only) {
+	@media #{$tablet-only} {
 		margin: 0 2px 34px;
 	}
 
-	@media (--desktop-only) {
+	@media #{$desktop-only} {
 		margin: 0 0 47px;
 	}
 }

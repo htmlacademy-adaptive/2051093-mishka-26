@@ -3,14 +3,14 @@
 	align-items: center;
 	gap: 23px;
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		gap: 30px;
 	}
 
 	&--radio {
 		gap: 19px;
 
-		@media (--not-mobile) {
+		@media #{$not-mobile} {
 			gap: 26px;
 		}
 	}

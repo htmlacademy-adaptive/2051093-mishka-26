@@ -1,11 +1,11 @@
 .contacts {
 	padding: 38px 0;
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		padding: 68px 0 57px;
 	}
 
-	@media (--desktop-only) {
+	@media #{$desktop-only} {
 		padding: 71px 0 105px 175px;
 		box-sizing: border-box;
 		display: grid;
@@ -32,7 +32,7 @@
 	margin: 0;
 	margin-bottom: 28px;
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		margin-bottom: 49px;
 
 		&::before {
@@ -47,7 +47,7 @@
 		}
 	}
 
-	@media (--desktop-only) {
+	@media #{$desktop-only} {
 		margin: 79px 0 34px;
 
 
@@ -63,12 +63,12 @@
 	margin: 0;
 	margin-bottom: 62px;
 
-	@media (--tablet-only) {
+	@media #{$tablet-only} {
 		grid-template-columns: 1fr 3fr 1fr 3fr;
 		margin-bottom: 49px;
 	}
 
-	@media (--desktop-only) {
+	@media #{$desktop-only} {
 		grid-template-columns: 82px 250px;
 		gap: 33px 0;
 	}
@@ -96,12 +96,12 @@
 		}
 	}
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		font-size: 17px;
 		padding: 0 2px;
 	}
 
-	@media (--tablet-only) {
+	@media #{$tablet-only} {
 		padding: 0;
 	}
 }
@@ -114,11 +114,11 @@
 
 	grid-area: map;
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		height: 457px;
 	}
 
-	@media (--desktop-only) {
+	@media #{$desktop-only} {
 		width: 527px;
 		height: 457px;
 	}
@@ -128,12 +128,12 @@
 	display: inline-block;
 	margin-top: 42px;
 
-	@media (--tablet-only) {
+	@media #{$tablet-only} {
 		margin-top: 55px;
 		padding: 16px 30px;
 	}
 
-	@media (--desktop-only) {
+	@media #{$desktop-only} {
 		margin: 0;
 		margin-right: auto;
 		padding: 16px 36px;

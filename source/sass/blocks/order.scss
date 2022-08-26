@@ -2,7 +2,7 @@
 	background: var(--light-color);
 	padding-bottom: 55px;
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		padding: 50px 0;
 	}
 }
@@ -11,13 +11,13 @@
 	padding: 17px 0 15px;
 	font-size: 13px;
 
-	@media (--not-mobile) {
+	@media #{$not-mobile} {
 		font-size: 17px;
 		line-height: 30px;
 		padding: 4px 0 15px;
 	}
 
-	@media (--desktop-only) {
+	@media #{$desktop-only} {
 		box-sizing: border-box;
 		padding-left: 175px;
 		padding-right: 190px;
