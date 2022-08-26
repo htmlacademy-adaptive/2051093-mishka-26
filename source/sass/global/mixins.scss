@@ -7,11 +7,11 @@
 		}
 
 		@if $viewport == tablet {
-			$media-query: #{$not-tablet};
+			$media-query: $not-mobile;
 		}
 
 		@if $viewport == desktop {
-			$media-query: #{$desktop-only};
+			$media-query: $desktop-only;
 		}
 
 		@media #{$media-query} {
