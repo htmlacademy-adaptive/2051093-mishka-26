@@ -1,29 +1,14 @@
 .intro {
 	position: relative;
 	padding-bottom: 133px;
-	background: var(--light-accent-color) url("../../img/intro-mobile@1x.jpg") no-repeat center/cover;
+	background: var(--light-accent-color) no-repeat center/cover;
 	text-align: center;
 
 	@media #{$not-mobile} {
 		padding-bottom: 0;
-		background-image: url("../../img/intro-tablet@1x.jpg");
 	}
 
-	@media #{$desktop-only} {
-		background-image: url("../../img/intro-desktop@1x.jpg");
-	}
-
-	@media (min-resolution: 2dppx) {
-		background-image: url("../../img/intro-mobile@2x.jpg");
-
-		@media #{$not-mobile} {
-			background-image: url("../../img/intro-tablet@2x.jpg");
-		}
-
-		@media #{$desktop-only} {
-			background-image: url("../../img/intro-desktop@2x.jpg");
-		}
-	}
+	@include bg-adaptive(intro, jpg);
 }
 
 .intro__title {

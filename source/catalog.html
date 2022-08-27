@@ -11,7 +11,7 @@
 				<h2 class="visually-hidden">Список товаров</h2>
 				<ul class="product__list">
 					<li class="product__item product-card ">
-						<img class="product-card__image" src="#" alt="">
+						{% include "./templates/picture.twig" with {name: "product_1", class: "product-card__image"} %}
 						<div class="product-card__wrapper">
 							<h3 class="product-card__title product-title">
 								<a class="product-card__link" href="javascript:void(0)">Зайчик-попрыгайчик</a>
@@ -26,7 +26,7 @@
 						</div>
 					</li>
 					<li class="product__item product-card">
-						<img class="product-card__image" src="#" alt="">
+						{% include "./templates/picture.twig" with {name: "product_2", class: "product-card__image"} %}
 						<div class="product-card__wrapper">
 							<h3 class="product-card__title product-title">
 								<a class="product-card__link" href="javascript:void(0)">Корзинка для белья</a>
@@ -41,7 +41,7 @@
 						</div>
 					</li>
 					<li class="product__item product-card">
-						<img class="product-card__image" src="#" alt="">
+						{% include "./templates/picture.twig" with {name: "product_3", class: "product-card__image"} %}
 						<div class="product-card__wrapper">
 							<h3 class="product-card__title product-title">
 								<a class="product-card__link" href="javascript:void(0)">Большая корзинка для игрушек</a>
@@ -59,9 +59,10 @@
 				<div class="production">
 					<div class="production__container production__container--title">
 						<h3 class="production__title product-title">Процесс производства</h3>
-						<!--тут могло быть ваше видео-->
 					</div>
-					<div class="production__video"></div>
+					<div class="production__video">
+						{% include "./templates/picture.twig" with {name: "production-video", class: "production__video"} %}
+					</div>
 					<div class="production__container">
 						<p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
 						<button class="production__button button" type="button">Сделать заказ</button>
