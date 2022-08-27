@@ -53,10 +53,10 @@ export default {
 			"height": 457,
 			"maxdppx": 2,
 			"alt": "",
-			"viewports": ["desktop", "tablet", "mobile"]
+			"viewports": ["tablet"]
 		},
 
-		"product_1": {
+		"catalog/product-1": {
 			"ext": "jpg",
 			"width": 260,
 			"height": 195,
@@ -65,7 +65,7 @@ export default {
 			"viewports": ["desktop", "tablet", "mobile"]
 		},
 
-		"product_2": {
+		"catalog/product-2": {
 			"ext": "jpg",
 			"width": 260,
 			"height": 195,
@@ -74,7 +74,7 @@ export default {
 			"viewports": ["desktop", "tablet", "mobile"]
 		},
 
-		"product_3": {
+		"catalog/product-3": {
 			"ext": "jpg",
 			"width": 260,
 			"height": 195,
