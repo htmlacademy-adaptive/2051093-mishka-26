@@ -23,27 +23,30 @@
 	&::before {
 		position: absolute;
 		left: 0;
-		width: 21px;
-		height: 21px;
-		background: var(--main-color);
-		opacity: 0.2;
+		width: 24px;
+		height: 24px;
+		background-color: var(--pale-main-color);
 		content: "";
-		outline: 1px dashed #000000;
-		outline-offset: -1px;
 
 		@media #{$not-mobile} {
 			left: 32px;
 		}
 	}
 
+	&--search::before {
+		mask: url("../../icons/stack.svg#search-icon") no-repeat center / contain;
+	}
+
+	&--cart::before {
+		mask: url("../../icons/stack.svg#cart-icon") no-repeat center / contain;
+	}
+
 	&:hover::before {
-		background: var(--accent-color);
-		opacity: 1;
+		background-color: var(--accent-color);
 	}
 
 	&:active::before {
-		background: var(--accent-color);
-		opacity: 0.3;
+		background-color: var(--pale-accent-color);
 	}
 }
 

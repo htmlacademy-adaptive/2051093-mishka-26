@@ -61,11 +61,36 @@
 	}
 
 	&::before {
-		width: 55px;
+		width: 56px;
 		height: 38px;
+		margin-left: -6px;
 		background: var(--accent-color);
 		outline: 1px dashed #000000;
 		outline-offset: -1px;
 		content: "";
+	}
+
+	&--materials::before {
+		background: url("../../icons/stack.svg#eco-icon") no-repeat center / contain;
+	}
+
+	&--handmade::before {
+		background: url("../../icons/stack.svg#handmade-icon") no-repeat center / contain;
+	}
+
+	&--price::before {
+		background: url("../../icons/stack.svg#price-icon") no-repeat center / contain;
+	}
+
+	&--production::before {
+		background: url("../../icons/stack.svg#production-icon") no-repeat center / contain;
+	}
+
+	&--likes::before {
+		background: url("../../icons/stack.svg#likes-icon") no-repeat center / contain;
+	}
+
+	&--delivery::before {
+		background: url("../../icons/stack.svg#delivery-icon") no-repeat center / contain;
 	}
 }

@@ -121,8 +121,9 @@
 		top: 12px;
 		right: 3px;
 		width: 32px;
-		height: 24px;
-		background: var(--pale-main-color);
+		height: 32px;
+		background-color: var(--pale-main-color);
+		mask: url("../../icons/stack.svg#tel-icon") no-repeat center / contain;
 		content: "";
 		z-index: 100;
 
@@ -136,10 +137,14 @@
 		}
 	}
 
+	&--email::before {
+		mask: url("../../icons/stack.svg#email-icon") no-repeat center / contain;
+	}
+
 	&:hover,
 	&:active {
 		&::before {
-			background: var(--accent-link-color);
+			background-color: var(--accent-link-color);
 		}
 	}
 }

@@ -9,11 +9,11 @@
 		text-decoration: none;
 
 		&:hover {
-			opacity: 0.6;
+			color: var(--pale-hover-color);
 		}
 
 		&:active {
-			opacity: 0.3;
+			color: var(--pale-active-color);
 		}
 	}
 
@@ -34,7 +34,8 @@
 	}
 
 	@media #{$desktop-only} {
-		left: 43%;
+		left: 50%;
+		transform: translate(-50%);
 	}
 }
 

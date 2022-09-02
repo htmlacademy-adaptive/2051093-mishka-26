@@ -1,10 +1,11 @@
 <header class="main__header header page__centerer">
 	<a class="header__logo logo" href="./index.html">
-		<picture>
-			<source media="(min-width: 1150px)" srcset="img/header-logo-desktop.svg">
-			<source media="(min-width: 768px)" srcset="img/header-logo-tablet.svg">
-			<img class="logo__image"  src="img/header-logo-mobile.svg" width="85" height="34" alt="Логотип интернет мазагина Мишка.">
-		</picture>
+		<svg class="logo__image" width="85" height="34" role="img" aria-label="Логотип интернет мазагина Мишка.">
+			<use href="./img/logo.svg#name"></use>
+			<use href="./img/logo.svg#underline"></use>
+			<use href="./img/logo.svg#tablet"></use>
+			<use href="./img/logo.svg#desktop"></use>
+		</svg>
 	</a>
 	<nav class="header__nav nav">
 		<button class="nav__toggle" type="button">
@@ -21,14 +22,14 @@
 			</ul>
 			<ul class="nav__list user-list">
 				<li class="nav__item user-list__item">
-					<a class="nav__link user-list__link" href="javascript:void(0)">
+					<a class="nav__link user-list__link user-list__link--search" href="javascript:void(0)">
 						<span class="user-list__text user-list__text--hidden">
 							Поиск по сайту
 						</span>
 					</a>
 				</li>
 				<li class="nav__item user-list__item">
-					<a class="nav__link user-list__link" href="javascript:void(0)">Корзина: пока пуста</a>
+					<a class="nav__link user-list__link user-list__link--cart" href="javascript:void(0)">Корзина: пока пуста</a>
 				</li>
 			</ul>
 			<ul class="nav__list promo-list">

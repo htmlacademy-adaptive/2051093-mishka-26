@@ -9,7 +9,7 @@
 		padding: 71px 0 105px 175px;
 		box-sizing: border-box;
 		display: grid;
-		grid-template-columns: 2fr 3fr;
+		grid-template-columns: 1fr 2fr 3fr;
 		grid-template-areas: "contacts map" "button map";
 	}
 }
@@ -38,12 +38,13 @@
 		&::before {
 			position: absolute;
 			top: -12px;
-			right: 50px;
-			width: 47px;
-			height: 81px;
+			right: 0;
+			width: 110px;
+			height: 82px;
 			content: "";
 			outline: 1px dashed #000000;
 			outline-offset: -1px;
+			background: url("../../icons/stack.svg#flag-icon") no-repeat center / contain;
 		}
 	}
 
@@ -52,7 +53,7 @@
 
 
 		&::before {
-			left: -112px;
+			left: -175px;
 		}
 	}
 }

@@ -16,11 +16,11 @@
 		}
 
 		&:hover::after {
-			background: var(--fourth-accent-color);
+			background-color: var(--fourth-accent-color);
 		}
 
 		&:active::after {
-			background: var(--fourth-accent-color);
+			background-color: var(--fourth-accent-color);
 			opacity: 0.3;
 		}
 	}
@@ -54,14 +54,15 @@
 }
 
 .footer__main-logo {
-	display: none;
+	display: block;
 
-	@media #{$not-mobile} {
-		display: block;
+	@media #{$mobile-only} {
+		position: absolute;
+		transform: scale(0);
+	}
 
-		&::after {
-			background: var(--main-color);
-		}
+	&::after {
+		display: none;
 	}
 }
 
@@ -76,7 +77,7 @@
 
 .footer__copyright {
 	display: flex;
-	gap: 27px;
+	gap: 23px;
 	align-items: center;
 	margin: 0;
 	font-size: 19px;
@@ -91,10 +92,11 @@
 
 .footer__logo {
 	display: block;
-	width: 27px;
-	height: 34px;
+	width: 35px;
+	height: 35px;
 
 	&::after {
-		background: var(--accent-color);
+		background-color: var(--accent-color);
+		mask: url("../../icons/stack.svg#html-icon") no-repeat center / contain;
 	}
 }

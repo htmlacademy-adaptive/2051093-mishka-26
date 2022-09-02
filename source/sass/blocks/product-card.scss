@@ -114,16 +114,17 @@
 		width: 100%;
 		height: 100%;
 		content: "";
-		background: var(--pale-main-color);
+		background-color: var(--pale-main-color);
+		mask: url("../../icons/stack.svg#cart-icon") no-repeat center / contain;
 		outline: 1px dashed #000000;
 		outline-offset: -1px;
 	}
 
 	&:hover::after {
-		background: var(--accent-color);
+		background-color: var(--accent-color);
 	}
 
 	&:active::after {
-		background: var(--pale-accent-color);
+		background-color: var(--pale-accent-color);
 	}
 }

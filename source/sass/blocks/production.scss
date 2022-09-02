@@ -52,8 +52,8 @@
 	margin: 0 0 5px;
 
 	@media #{$not-mobile} {
-		margin: 29px 0 0;
 		gap: 33px;
+		margin: 29px 0 0;
 	}
 
 	@media #{$desktop-only} {
@@ -66,7 +66,8 @@
 	&::before {
 		width: 32px;
 		height: 32px;
-		background: var(--accent-color);
+		background-color: var(--accent-color);
+		mask: url("../../icons/stack.svg#video-icon") no-repeat center / contain;
 		outline: 1px dashed #000000;
 		outline-offset: -1px;
 		content: "";
@@ -74,6 +75,7 @@
 }
 
 .production__video {
+	position: relative;
 	align-self: center;
 	width: 260px;
 	height: 150px;
@@ -90,6 +92,27 @@
 		width: 683px;
 		height: 455px;
 		grid-area: video;
+	}
+}
+
+.production__video-button {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 102px;
+	height: 102px;
+	background: url("../../icons/stack.svg#play-video-icon") no-repeat center / contain;
+	border: none;
+	transform: translate(-50%, -50%);
+
+	&:hover {
+		width: 116px;
+		height: 116px;
+	}
+
+	&:active {
+		background-size: 80%;
+		opacity: 0.3;
 	}
 }
 

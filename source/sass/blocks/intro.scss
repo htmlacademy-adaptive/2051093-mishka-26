@@ -62,13 +62,44 @@
 		position: absolute;
 		top: 21px;
 		right: 27px;
-		width: 60px;
-		height: 62px;
+		width: 64px;
+		height: 64px;
 		background: var(--accent-dark-color);
 		opacity: 0.5;
-		outline: 1px dashed #000000;
-		outline-offset: -1px;
 		content: "";
+	}
+
+	&--stuff {
+		background: var(--accent-color);
+
+		&::after {
+			background: url("../../icons/stack.svg#stuff-icon") no-repeat center / contain;
+		}
+
+		&:hover {
+			background: var(--third-accent-color);
+		}
+
+		&:active {
+			background: var(--third-accent-color);
+		}
+	}
+
+
+	&--toy {
+		background: var(--sec-accent-color);
+
+		&::after {
+			background: url("../../icons/stack.svg#toy-icon") no-repeat center / contain;
+		}
+
+		&:hover {
+			background: var(--fourth-accent-color);
+		}
+
+		&:active {
+			background: var(--fourth-accent-color);
+		}
 	}
 
 	&:hover {
@@ -94,29 +125,5 @@
 			margin-top: -5px;
 			padding-bottom: 39px;
 		}
-	}
-}
-
-.intro__link--stuff {
-	background: var(--accent-color);
-
-	&:hover {
-		background: var(--third-accent-color);
-	}
-
-	&:active {
-		background: var(--third-accent-color);
-	}
-}
-
-.intro__link--toy {
-	background: var(--sec-accent-color);
-
-	&:hover {
-		background: var(--fourth-accent-color);
-	}
-
-	&:active {
-		background: var(--fourth-accent-color);
 	}
 }

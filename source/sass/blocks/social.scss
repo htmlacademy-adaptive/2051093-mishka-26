@@ -14,6 +14,18 @@
 	height: 40px;
 
 	&::after {
-		background: var(--main-color);
+		background-color: var(--main-color);
+	}
+
+	&--vk::after {
+		mask: url("../../icons/stack.svg#vk-icon") no-repeat center / contain;
+	}
+
+	&--yt::after {
+		mask: url("../../icons/stack.svg#youtube-icon") no-repeat center / contain;
+	}
+
+	&--tg::after {
+		mask: url("../../icons/stack.svg#telegram-icon") no-repeat center / contain;
 	}
 }

@@ -12,3 +12,14 @@
 		height: 72px;
 	}
 }
+
+.logo__footer {
+	&:hover {
+		--logo-color: #46c1ae;
+	}
+
+	&:active {
+		--logo-color: #46c1ae;
+		opacity: 0.3;
+	}
+}
