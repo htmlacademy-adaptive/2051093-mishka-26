@@ -2,7 +2,7 @@
 	padding: 31px 0;
 
 	@media #{$not-mobile} {
-		padding: 43px 0 83px;
+		padding: 55px 0 70px;
 	}
 
 	@media #{$desktop-only} {
@@ -26,13 +26,14 @@
 .about__list {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	gap: 50px;
+	gap: 52px 0;
 	padding: 0;
 	list-style: none;
 
 	@media #{$mobile-only} {
 		display: flex;
 		flex-wrap: wrap;
+		gap: 30px;
 	}
 
 	@media #{$desktop-only} {
@@ -50,6 +51,8 @@
 	color: var(--main-color);
 
 	@media #{$mobile-only} {
+		gap: 15px;
+
 		&:nth-of-type(2n + 2) {
 			order: 1;
 		}

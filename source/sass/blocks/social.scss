@@ -1,6 +1,6 @@
 .social {
 	display: flex;
-	gap: 29px;
+	gap: 28px;
 	list-style: none;
 }
 
@@ -10,8 +10,8 @@
 
 .social__link {
 	display: block;
-	width: 40px;
-	height: 40px;
+	width: 29px;
+	height: 28px;
 
 	&::after {
 		background-color: var(--main-color);

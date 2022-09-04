@@ -2,7 +2,7 @@
 .header {
 	position: relative;
 	display: flex;
-	padding: 22px 0;
+	padding: 19px 0;
 
 	a {
 		color: var(--main-color);
@@ -25,16 +25,17 @@
 
 .header__logo {
 	position: absolute;
-	top: 22px;
-	left: 50%;
-	transform: translate(-50%);
+	top: 16px;
+	left: 48%;
+	transform: translate(-48%);
 
 
 	@media #{$tablet-only} {
-		left: 0;
+		left: 52px;
 	}
 
 	@media #{$desktop-only} {
+		top: 9px;
 		left: 50%;
 		transform: translate(-50%);
 	}

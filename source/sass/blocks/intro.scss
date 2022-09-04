@@ -1,7 +1,9 @@
 .intro {
 	position: relative;
 	padding-bottom: 133px;
-	background: var(--light-accent-color) no-repeat center/cover;
+	background: var(--very-light-color) no-repeat;
+	background-position: 50% -20px;
+	background-size: contain;
 	text-align: center;
 
 	&::after {
@@ -17,6 +19,7 @@
 
 	@media #{$not-mobile} {
 		padding-bottom: 0;
+		background-position: 50% -55px;
 
 		&::after {
 			background: url("../../icons/stack.svg#wave") repeat-x bottom;
@@ -26,6 +29,8 @@
 
 
 	@media #{$desktop-only} {
+		background-position: 50% -30px;
+
 		&::after {
 			height: 34px;
 			background-size: 62px 34px;
@@ -37,10 +42,14 @@
 
 .intro__title {
 	margin: 0;
-	padding: 80px 30px 324px;
+	padding: 75px 30px 192px;
 
 	@media #{$not-mobile} {
-		padding: 155px 50px 480px;
+		padding: 95px 50px 500px;
+	}
+
+	@media #{$desktop-only} {
+		padding: 95px 50px 490px;
 	}
 }
 
@@ -66,9 +75,15 @@
 
 	@media #{$not-mobile} {
 		flex-direction: row;
+	}
 
-		.intro__item {
-			flex-grow: 1;
+	.intro__item {
+		@media #{$tablet-only} {
+			width: 334px;
+		}
+
+		@media #{$desktop-only} {
+			width: 525px;
 		}
 	}
 }
@@ -81,11 +96,12 @@
 	font-weight: 700;
 	color: var(--light-color);
 	text-decoration: none;
+	box-sizing: border-box;
 
 	&::after {
 		position: absolute;
-		top: 21px;
-		right: 27px;
+		top: 19px;
+		right: 26px;
 		width: 64px;
 		height: 64px;
 		background: var(--accent-dark-color);
@@ -127,7 +143,7 @@
 	}
 
 	&:hover {
-		padding-bottom: 36px;
+		margin-top: -5px;
 
 		&::after {
 			opacity: 0.7;
@@ -141,13 +157,17 @@
 	}
 
 	@media #{$not-mobile} {
-		padding: 25px 26px 34px;
+		padding: 25px 36px 52px;
 		font-size: 20px;
 		line-height: 30px;
 
-		&:hover {
-			margin-top: -5px;
-			padding-bottom: 39px;
+		&::after {
+			top: 31px;
+			right: 30px;
 		}
+	}
+
+	@media #{$tablet-only} {
+		padding-bottom: 48px;
 	}
 }

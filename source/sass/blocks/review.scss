@@ -1,14 +1,27 @@
 .review {
 	position: relative;
+	padding-bottom: 20px;
+
+	@media #{$mobile-only} {
+		padding-bottom: 75px;
+	}
+
+	@media #{$desktop-only} {
+		padding-bottom: 86px;
+	}
+}
+
+.review__container {
+	position: relative;
 	display: flex;
 	flex-direction: column;
-	padding: 27px 0;
+	padding: 14px 0;
 
 	@media #{$not-mobile} {
 		display: grid;
 		grid-template-columns: auto 175px;
 		grid-template-areas: "title button" "text text";
-		padding: 82px 0 47px;
+		padding: 77px 0 47px;
 
 		&::before {
 			position: absolute;
@@ -38,11 +51,16 @@
 
 .review__title {
 	margin: 0;
+	margin-bottom: 14px;
 
 	grid-area: title;
 
 	@media #{$not-mobile} {
-		margin-bottom: 40px;
+		margin-bottom: 38px;
+	}
+
+	@media #{$tablet-only} {
+		margin-top: 5px;
 	}
 }
 
@@ -61,46 +79,52 @@
 
 .review__text {
 	margin: 0;
-	margin-bottom: 33px;
+	margin-bottom: 30px;
 	line-height: 30px;
 
 	@media #{$not-mobile} {
-		margin-bottom: 61px;
+		margin-bottom: 58px;
 		font-size: 17px;
 	}
 
 	@media #{$desktop-only} {
-		margin-bottom: 44px;
+		margin-bottom: 40px;
 	}
 }
 
 .review__author {
 	margin: 0;
 	font-size: 17px;
+	line-height: 30px;
 	grid-area: author;
-
-	@media #{$not-mobile} {
-		font-size: 18px;
-	}
 
 	@media #{$tablet-only} {
 		margin-bottom: 10px;
 	}
 }
 
+.review__author-bold {
+	font-size: 17px;
+	line-height: 24px;
+
+	@media #{$tablet-only} {
+		font-size: 18px;
+	}
+}
+
 .review__slider-buttons {
 	display: flex;
-	margin-bottom: 38px;
+	margin-bottom: 41px;
 
 	@media #{$not-mobile} {
 		position: absolute;
-		bottom: 60px;
-		right: 16px;
+		bottom: 61px;
+		right: 22px;
 		margin: 0;
 	}
 
 	@media #{$desktop-only} {
-		bottom: 96px;
+		bottom: 102px;
 		right: 18px;
 	}
 }
@@ -151,10 +175,15 @@
 
 .review__button {
 	margin-bottom: 18px;
+	padding: 14px;
 
 	grid-area: button;
 
 	@media #{$not-mobile} {
 		align-self: start;
+	}
+
+	@media #{$tablet-only} {
+		margin-right: 4px;
 	}
 }

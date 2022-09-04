@@ -2,36 +2,36 @@
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	padding: 30px 0 36px;
+	padding: 30px 0 42px;
 
 	@media #{$not-mobile} {
 		display: grid;
 		grid-template-columns: 2fr 1fr 1fr;
 		grid-template-areas: "title title promo" "text image image" "table image image" "price image image" "button image image";
 
-		padding: 40px 0 50px;
+		padding: 40px 0 70px;
 	}
 
 	@media #{$desktop-only} {
 		grid-template-columns: 1fr 2fr 3fr;
 		grid-template-areas: "promo title image" "promo text image" "promo table image" "promo price image" "promo button image";
 
-		padding: 54px 0 70px;
+		padding: 54px 0 95px;
 	}
 }
 
 .offer__title {
 	margin: 0;
-	margin-bottom: 4px;
+	margin-bottom: 6px;
 	grid-area: title;
 
 	@media #{$tablet-only} {
-		margin-bottom: 38px;
+		margin-bottom: 48px;
 	}
 
 	@media #{$desktop-only} {
 		grid-column: 2/4;
-		margin: 64px 0 35px;
+		margin: 62px 0 40px;
 	}
 }
 
@@ -44,54 +44,56 @@
 	grid-area: promo;
 
 	@media #{$not-mobile} {
-		margin-top: 74px;
+		margin-top: 70px;
+		margin-left: 32px;
 		width: 100px;
 		line-height: 17px;
 		text-align: center;
-		justify-self: center;
 	}
 
 	@media #{$tablet-only} {
-		margin: 10px 13px 0 0;
+		margin: 6px 16px 0 0;
 		justify-self: end;
 	}
 }
 
 .offer__text {
 	grid-area: text;
+	margin-bottom: 24px;
 
 	@media #{$not-mobile} {
-		margin: -12px 0 48px;
+		margin: -12px 0 36px;
 		font-size: 17px;
 		line-height: 30px;
 	}
 
 	@media #{$desktop-only} {
-		margin-bottom: 60px;
+		margin-bottom: 46px;
 	}
 }
 
 .offer__list {
 	display: grid;
-	grid-template-columns: 30% 55%;
+	grid-template-columns: 38% 62%;
 	margin: 0;
 	margin-bottom: 28px;
 
 	grid-area: table;
 
 	@media #{$tablet-only} {
-		grid-template-columns: 30% 60%;
+		grid-template-columns: 28% 60%;
 		margin-bottom: 57px;
 	}
 
 	@media #{$desktop-only} {
-		margin-bottom: 109px;
+		grid-template-columns: 28% 55%;
+		margin-bottom: 107px;
 	}
 }
 
 .offer__item {
 	margin: 0;
-	padding: 7px 2px;
+	padding: 7px 0 10px;
 	line-height: 20px;
 	border-bottom: 1px solid var(--border-color);
 }
@@ -105,7 +107,7 @@
 	display: block;
 	width: 260px;
 	height: 315px;
-	margin-bottom: 25px;
+	margin-bottom: 30px;
 	outline: 1px dashed #000000;
 	outline-offset: -1px;
 
@@ -124,25 +126,33 @@
 
 .offer__price {
 	display: block;
-	margin-bottom: 25px;
+	margin-bottom: 24px;
 	font-size: 17px;
 	line-height: 24px;
 	font-weight: 700;
 	text-align: center;
-
 	grid-area: price;
 
 	@media #{$not-mobile} {
-		margin-bottom: 33px;
+		margin-bottom: 18px;
+		margin-left: 74px;
 		font-size: 20px;
+		text-align: left;
 	}
 }
 
 .offer__button {
 	grid-area: button;
+	padding: 14px;
 
 	@media #{$not-mobile} {
 		display: inline-block;
-		width: 80%;
+		width: 83%;
+		box-sizing: border-box;
+		margin-top: auto;
+	}
+
+	@media #{$tablet-only} {
+		width: 87%;
 	}
 }

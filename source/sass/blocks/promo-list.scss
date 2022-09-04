@@ -3,12 +3,13 @@
 
 	@media #{$desktop-only} {
 		display: flex;
+		flex-wrap: wrap;
 		grid-area: promo;
-		padding: 20px 0;
 		font-size: 15px;
 	}
 }
 
 .promo-list__item {
+	padding: 20px 0;
 	padding-right: 60px;
 }
