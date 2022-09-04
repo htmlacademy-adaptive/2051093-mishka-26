@@ -1,3 +1,13 @@
+.logo {
+	&:hover {
+		opacity: 0.6;
+	}
+
+	&:active {
+		opacity: 0.3;
+	}
+}
+
 .logo__image {
 	width: 85px;
 	height: 34px;

@@ -16,5 +16,28 @@
 }
 
 .catalog-page__product {
+	position: relative;
 	background: var(--light-color);
+
+	&::before {
+		position: absolute;
+		top: -10px;
+		left: 0;
+		right: 0;
+		width: 100%;
+		height: 24px;
+		z-index: 10;
+		content: "";
+
+		@media #{$not-mobile} {
+			background: url("../../icons/stack.svg#wave") repeat-x top;
+			background-size: 39px 24px;
+		}
+
+		@media #{$desktop-only} {
+			top: -20px;
+			height: 34px;
+			background-size: 62px 34px;
+		}
+	}
 }

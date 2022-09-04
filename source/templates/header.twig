@@ -1,15 +1,15 @@
 <header class="main__header header page__centerer">
 	<a class="header__logo logo" href="./index.html">
-		<svg class="logo__image" width="85" height="34" role="img" aria-label="Логотип интернет мазагина Мишка.">
-			<use href="./img/logo.svg#name"></use>
-			<use href="./img/logo.svg#underline"></use>
-			<use href="./img/logo.svg#tablet"></use>
-			<use href="./img/logo.svg#desktop"></use>
-		</svg>
+		<picture>
+			<source media="(min-width: 1150px)" srcset="./img/logo.svg#desktop">
+			<source media="(min-width: 768px)" srcset="./img/logo.svg#tablet">
+			<img class="logo__image" width="85" height="34" src="./img/logo.svg#underline" alt="Логотип интернет мазагина Мишка.">
+		</picture>
 	</a>
 	<nav class="header__nav nav">
 		<button class="nav__toggle" type="button">
 			<span class="visually-hidden">Открыть меню</span>
+			<span class="nav__button"></span>
 		</button>
 		<div class="nav__wrapper nav__wrapper--close">
 			<ul class="nav__list site-list">
