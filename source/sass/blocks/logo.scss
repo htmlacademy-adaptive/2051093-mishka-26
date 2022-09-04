@@ -9,8 +9,9 @@
 }
 
 .logo__image {
-	width: 85px;
-	height: 34px;
+	display: block;
+	width: 100px;
+	height: 35px;
 
 	@media #{$tablet-only} {
 		width: 113px;
