@@ -24,22 +24,24 @@
 	}
 
 	@media #{$desktop-only} {
+		padding: 96px 0 50px;
+
 		&::before {
 			top: -20px;
 			height: 34px;
-			background-size: 62px 34px;
+			background-size: 58px 34px;
 		}
 	}
 }
 
 .order__text {
-	padding: 17px 0 15px;
+	padding: 19px 0 15px;
 	font-size: 13px;
 
 	@media #{$not-mobile} {
 		font-size: 17px;
 		line-height: 30px;
-		padding: 4px 0 15px;
+		padding: 16px 0 15px;
 	}
 
 	@media #{$desktop-only} {

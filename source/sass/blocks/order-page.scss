@@ -5,4 +5,12 @@
 .order-page__title {
 	margin: 0;
 	padding: 73px 22px;
+
+	@media #{$tablet-only} {
+		padding: 38px 50px 74px;
+	}
+
+	@media #{$desktop-only} {
+		padding: 38px 50px 100px;
+	}
 }
