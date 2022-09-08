@@ -4,14 +4,14 @@
 
 .catalog-page__title {
 	margin: 0;
-	padding: 73px 0;
+	padding: 73px 22px;
 
-	@media #{$not-mobile} {
-		padding: 101px 0 75px;
+	@media #{$tablet-only} {
+		padding: 38px 50px 74px;
 	}
 
 	@media #{$desktop-only} {
-		padding: 102px 0 95px;
+		padding: 38px 50px 100px;
 	}
 }
 
@@ -37,7 +37,7 @@
 		@media #{$desktop-only} {
 			top: -20px;
 			height: 34px;
-			background-size: 62px 34px;
+			background-size: 58px 34px;
 		}
 	}
 }

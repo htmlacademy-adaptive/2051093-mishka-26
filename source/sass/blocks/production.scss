@@ -25,7 +25,7 @@
 .production__container {
 	display: flex;
 	flex-direction: column;
-	padding: 21px 30px;
+	padding: 21px 32px;
 	grid-area: content;
 
 	@media #{$tablet-only} {
@@ -33,12 +33,13 @@
 	}
 
 	@media #{$desktop-only} {
-		padding: 13px 57px 13px 79px;
+		padding: 15px 57px 0 79px;
 	}
 }
 
 .production__container--title {
 	grid-area: title;
+	display: block;
 
 	@media #{$mobile-only} {
 		padding-right: 0;
@@ -53,17 +54,18 @@
 
 	@media #{$not-mobile} {
 		gap: 33px;
-		margin: 29px 0 0;
+		margin: 27px 0 0;
 	}
 
 	@media #{$desktop-only} {
-		margin-top: 47px;
 		flex-direction: column;
-		gap: 27px;
+		gap: 23px;
 		align-items: flex-start;
 	}
 
 	&::before {
+		flex-shrink: 0;
+		margin-top: -5px;
 		width: 32px;
 		height: 32px;
 		background-color: var(--accent-color);
@@ -71,6 +73,10 @@
 		outline: 1px dashed #000000;
 		outline-offset: -1px;
 		content: "";
+
+		@media #{$desktop-only} {
+			margin-top: 0;
+		}
 	}
 }
 
@@ -85,7 +91,7 @@
 	@media #{$tablet-only} {
 		order: -1;
 		width: 668px;
-		height: 450px;
+		height: 455px;
 	}
 
 	@media #{$desktop-only} {
@@ -122,6 +128,7 @@
 
 	@media #{$not-mobile} {
 		font-size: 15px;
+		line-height: 30px;
 		margin-top: 0;
 	}
 
@@ -131,7 +138,7 @@
 }
 
 .production__button {
-	margin: 0 4px 12px;
+	margin: 0 2px 12px;
 	line-height: 16px;
 
 	@media #{$tablet-only} {
