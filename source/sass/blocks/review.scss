@@ -77,6 +77,14 @@
 	}
 }
 
+.review__item {
+	display: block;
+
+	&--hidden {
+		display: none;
+	}
+}
+
 .review__text {
 	margin: 0;
 	margin-bottom: 30px;
@@ -135,6 +143,7 @@
 	flex-grow: 1;
 	width: 50px;
 	height: 48px;
+	background: transparent;
 	border: 1px solid var(--border-color);
 
 	&::after {
@@ -165,12 +174,16 @@
 }
 
 .review__prev {
-	mask: url("../../icons/stack.svg#arrow-icon") no-repeat center / contain;
-	transform: rotate(180deg);
+	&::after {
+		mask: url("../../icons/stack.svg#arrow-icon") no-repeat center / contain;
+		transform: rotate(180deg);
+	}
 }
 
 .review__next {
-	mask: url("../../icons/stack.svg#arrow-icon") no-repeat center / contain;
+	&::after {
+		mask: url("../../icons/stack.svg#arrow-icon") no-repeat center / contain;
+	}
 }
 
 .review__button {
