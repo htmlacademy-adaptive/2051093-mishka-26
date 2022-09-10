@@ -108,8 +108,6 @@
 	width: 260px;
 	height: 315px;
 	margin-bottom: 30px;
-	outline: 1px dashed #000000;
-	outline-offset: -1px;
 
 	@media #{$not-mobile} {
 		width: 334px;

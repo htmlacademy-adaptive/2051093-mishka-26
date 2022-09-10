@@ -9,7 +9,7 @@
 		<h2 class="order-page__title inner-title">Вязание на заказ</h2>
 		<div class="order">
 			<p class="order__text page__centerer">
-				Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
+				Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую<br> форму заказа и мы свяжемся с вами, чтобы уточнить детали.
 			</p>
 			<form class="order__form form" action="https://echo.htmlacademy.ru" method="get">
 				<div class="form__filter-group page__centerer" role="group" aria-labelledby="legend-type">
@@ -68,10 +68,10 @@
 					<span class="form__filter-title" id="legend-name">ФИО</span>
 					<div  class="form__filter-container">
 						<label class="form__filter-label form__text">Имя:
-							<input class="form__filter-input form__text" name="name" type="text" placeholder="Введите ваше имя*">
+							<input class="form__filter-input form__text" name="name" type="text" placeholder="Введите ваше имя*" required>
 						</label>
 						<label class="form__filter-label form__text">Фамилия:
-							<input class="form__filter-input form__text" name="surname" type="text" placeholder="Укажите фамилию*">
+							<input class="form__filter-input form__text" name="surname" type="text" placeholder="Укажите фамилию*" required>
 						</label>
 						<label class="form__filter-label form__text">Отчество:
 							<input class="form__filter-input form__text" name="father-name" id="father-name" type="text" placeholder="Отчество, если желаете">
@@ -82,11 +82,11 @@
 					<div class="form__filter-group form__filter-group--wrapper page__centerer">
 						<label class="form__filter-title form__filter-title--tel" for="tel">Тел</label>
 						<div class="form__filter-icon form__filter-icon--wrapper">
-							<input class="form__filter-input form__filter-input--wrapper form__text" name="phone" id="tel" type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*">
+							<input class="form__filter-input form__filter-input--wrapper form__text" name="phone" id="tel" type="tel" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
 						</div>
 						<label class="form__filter-title form__filter-title--email" for="email">E-mail</label>
 						<div class="form__filter-icon form__filter-icon--email">
-							<input class="form__filter-input form__text" name="email" id="email" type="email" placeholder="Ваш Email*">
+							<input class="form__filter-input form__text" name="email" id="email" type="email" placeholder="Ваш Email*" required>
 						</div>
 					</div>
 				</div>
@@ -97,7 +97,7 @@
 					<textarea class="form__filter-text form__text" id="desire" name="desire" cols="10" rows="6" placeholder="Опишите все ваши пожелания к заказу"></textarea>
 				</div>
 				<div class="form__container page__centerer">
-					<span class="form__tip"><sup>*</sup>Поля обязательны для заполнения</span>
+					<span class="form__tip" aria-hidden="true"><sup>*</sup>Поля обязательны для заполнения</span>
 					<button class="form__button button">Отправить заказ</button>
 				</div>
 			</form>

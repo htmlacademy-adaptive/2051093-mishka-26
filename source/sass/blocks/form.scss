@@ -22,20 +22,23 @@
 .form__filter-group {
 	display: grid;
 	padding: 15px 0;
-	outline: 1px dashed #000000;
-	outline-offset: -1px;
+
+	&--name {
+		padding-top: 18px;
+	}
 
 	&--wrapper {
-		padding: 7px 0 9px;
+		padding: 4px 0 9px;
 	}
 
 	&--textarea {
+		padding-top: 10px;
 		padding-bottom: 8px;
 	}
 
 	@media #{$not-mobile} {
 		grid-template-columns: 1fr 3fr;
-		align-items: baseline;
+		align-items: start;
 		padding: 50px 0;
 
 		&--name {
@@ -43,13 +46,12 @@
 		}
 
 		&--wrapper {
-			padding: 45px 0 28px;
+			padding: 43px 0 24px;
 		}
 	}
 
 	@media #{$desktop-only} {
 		grid-template-columns: 1fr 4fr;
-		align-items: start;
 		padding-right: 175px;
 		box-sizing: border-box;
 
@@ -60,6 +62,10 @@
 
 		&--textarea {
 			padding-bottom: 47px;
+		}
+
+		&--wrapper {
+			padding: 45px 175px 28px 0;
 		}
 	}
 }
@@ -101,6 +107,10 @@
 		@media #{$not-mobile} {
 			display: none;
 		}
+	}
+
+	@media #{$not-mobile} {
+		margin-block: 17px;
 	}
 
 	@media #{$desktop-only} {
@@ -155,7 +165,7 @@
 
 .form__filter-label {
 	font-weight: 700;
-	margin-top: 11px;
+	margin-top: 5px;
 
 	@media #{$not-mobile} {
 		display: flex;
@@ -169,7 +179,7 @@
 	position: relative;
 
 	&--wrapper {
-		margin-bottom: 22px;
+		margin-bottom: 20px;
 
 		@media #{$not-mobile} {
 			margin-bottom: 0;
@@ -202,7 +212,7 @@
 	}
 
 	&:hover,
-	&:active {
+	&:focus {
 		&::before {
 			background-color: var(--accent-link-color);
 		}
@@ -211,8 +221,8 @@
 
 .form__filter-input {
 	width: 100%;
-	margin-bottom: 13px;
-	padding: 17px 0 12px;
+	margin-bottom: 15px;
+	padding: 15px 0 12px;
 	font-family: inherit;
 	color: var(--base-color);
 	border: none;
@@ -220,21 +230,25 @@
 	box-sizing: border-box;
 
 	&--wrapper {
-		padding: 17px 0 19px;
+		padding: 15px 0;
 	}
 
 	&::placeholder {
 		color: var(--pale-main-color);
 	}
 
-	&:hover,
-	&:active {
+	&:hover {
 		border-color: var(--accent-link-color);
 	}
 
+	&:focus {
+		border-color: var(--accent-link-color);
+		outline: none;
+	}
+
 	@media #{$not-mobile} {
-		padding: 14px 17px 10px;
-		margin-bottom: 23px;
+		padding: 11px 17px 12px;
+		margin-bottom: 24px;
 
 		&--wrapper {
 			padding: 14px 17px 15px;
@@ -242,7 +256,8 @@
 	}
 
 	@media #{$desktop-only} {
-		padding-bottom: 11px;
+		padding: 13px 17px 12px;
+		margin-bottom: 22px;
 
 		&--wrapper {
 			padding-bottom: 14px;
@@ -260,9 +275,13 @@
 		color: var(--pale-main-color);
 	}
 
-	&:hover,
-	&:active {
+	&:hover {
 		border-color: var(--accent-link-color);
+	}
+
+	&:focus {
+		border-color: var(--accent-link-color);
+		outline: none;
 	}
 
 	@media #{$not-mobile} {

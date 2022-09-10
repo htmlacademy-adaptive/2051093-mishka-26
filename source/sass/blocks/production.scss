@@ -70,8 +70,6 @@
 		height: 32px;
 		background-color: var(--accent-color);
 		mask: url("../../icons/stack.svg#video-icon") no-repeat center / contain;
-		outline: 1px dashed #000000;
-		outline-offset: -1px;
 		content: "";
 
 		@media #{$desktop-only} {
@@ -85,8 +83,6 @@
 	align-self: center;
 	width: 260px;
 	height: 150px;
-	outline: 1px dashed #000000;
-	outline-offset: -1px;
 
 	@media #{$tablet-only} {
 		order: -1;

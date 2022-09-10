@@ -4,8 +4,6 @@
 	margin-right: -8px;
 	padding: 8px;
 	background: var(--light-color);
-	outline: 1px dashed #000000;
-	outline-offset: -1px;
 	display: flex;
 	align-items: center;
 
@@ -127,6 +125,10 @@
 		grid-area: delivery;
 		margin-left: auto;
 		padding: 20px 0;
+	}
+
+	@media #{$tablet-only} {
+		padding-right: 4px;
 	}
 
 	&::after {

@@ -8,8 +8,6 @@
 
 .page__centerer {
 	margin: 0 30px;
-	outline: 1px dashed #ff0000;
-	outline-offset: -1px;
 
 	@media #{$not-mobile} {
 		margin: 0 50px;

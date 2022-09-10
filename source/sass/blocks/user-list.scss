@@ -17,8 +17,15 @@
 	position: relative;
 
 	@media #{$not-mobile} {
-		padding-left: 85px;
+		padding-left: 82px;
+		padding-right: 2px;
 	}
+
+	@media #{$tablet-only} {
+		padding-left: 81px;
+		padding-right: 4px;
+	}
+
 
 	&::before {
 		position: absolute;
@@ -29,7 +36,7 @@
 		content: "";
 
 		@media #{$not-mobile} {
-			left: 32px;
+			left: 30px;
 		}
 	}
 

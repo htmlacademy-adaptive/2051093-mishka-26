@@ -2,7 +2,7 @@
 	position: relative;
 	padding-bottom: 20px;
 
-	@media #{$mobile-only} {
+	@media #{$tablet-only} {
 		padding-bottom: 75px;
 	}
 
@@ -21,7 +21,7 @@
 		display: grid;
 		grid-template-columns: auto 175px;
 		grid-template-areas: "title button" "text text";
-		padding: 77px 0 47px;
+		padding: 77px 4px 47px 0;
 
 		&::before {
 			position: absolute;
@@ -31,8 +31,6 @@
 			height: 457px;
 			background: no-repeat center / cover;
 			content: "";
-			outline: 1px dashed #000000;
-			outline-offset: -1px;
 			z-index: -1;
 
 			@include bg-adaptive(review, jpg);
@@ -167,9 +165,6 @@
 	@media #{$not-mobile} {
 		margin-left: 37px;
 		border: none;
-
-		outline: 1px dashed #000000;
-		outline-offset: -1px;
 	}
 }
 
@@ -196,7 +191,7 @@
 		align-self: start;
 	}
 
-	@media #{$tablet-only} {
-		margin-right: 4px;
-	}
+	// @media #{$tablet-only} {
+	// 	margin-right: 4px;
+	// }
 }

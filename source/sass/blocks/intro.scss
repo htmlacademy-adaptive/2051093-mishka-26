@@ -23,7 +23,7 @@
 
 		&::after {
 			background: url("../../icons/stack.svg#wave") repeat-x bottom;
-			background-size: 39px 24px;
+			background-size: 38.5px 24px;
 		}
 	}
 
@@ -45,7 +45,7 @@
 	padding: 75px 30px 192px;
 
 	@media #{$not-mobile} {
-		padding: 95px 50px 500px;
+		padding: 90px 50px 505px;
 	}
 
 	@media #{$desktop-only} {

@@ -38,6 +38,12 @@
 	padding: 19px 0 15px;
 	font-size: 13px;
 
+	@media #{$mobile-only} {
+		br {
+			display: none;
+		}
+	}
+
 	@media #{$not-mobile} {
 		font-size: 17px;
 		line-height: 30px;
@@ -48,5 +54,9 @@
 		box-sizing: border-box;
 		padding-left: 175px;
 		padding-right: 190px;
+
+		br {
+			display: none;
+		}
 	}
 }
