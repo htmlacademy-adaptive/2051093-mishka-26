@@ -76,15 +76,15 @@
 	@media #{$not-mobile} {
 		flex-direction: row;
 	}
+}
 
-	.intro__item {
-		@media #{$tablet-only} {
-			width: 334px;
-		}
+.intro__item {
+	@media #{$tablet-only} {
+		width: 334px;
+	}
 
-		@media #{$desktop-only} {
-			width: 525px;
-		}
+	@media #{$desktop-only} {
+		width: 525px;
 	}
 }
 

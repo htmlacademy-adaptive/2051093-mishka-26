@@ -9,6 +9,7 @@
 }
 
 .logo__image {
+	object-fit: cover;
 	display: block;
 	width: 89px;
 	height: 35px;
@@ -25,8 +26,8 @@
 }
 
 .logo__footer {
-	width: 102px;
-	height: 35px;
+	// width: 102px;
+	// height: 35px;
 
 	&:hover {
 		--logo-color: #46c1ae;

@@ -42,11 +42,15 @@
 		padding: 50px 0;
 
 		&--name {
-			padding-bottom: 29px;
+			padding-bottom: 28px;
 		}
 
 		&--wrapper {
 			padding: 43px 0 24px;
+		}
+
+		&--textarea {
+			padding-bottom: 52px;
 		}
 	}
 
@@ -221,9 +225,10 @@
 
 .form__filter-input {
 	width: 100%;
-	margin-bottom: 15px;
-	padding: 15px 0 12px;
+	margin-bottom: 16px;
+	padding: 15px 0 11px;
 	font-family: inherit;
+	line-height: 24px;
 	color: var(--base-color);
 	border: none;
 	border-bottom: 2px solid var(--main-color);
@@ -249,6 +254,7 @@
 	@media #{$not-mobile} {
 		padding: 11px 17px 12px;
 		margin-bottom: 24px;
+		line-height: 27px;
 
 		&--wrapper {
 			padding: 14px 17px 15px;
