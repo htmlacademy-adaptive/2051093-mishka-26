@@ -25,7 +25,6 @@ export default {
 			"width": 320,
 			"height": 454,
 			"maxdppx": 2,
-			"alt": "Магазин по адресу: улица Большая Конюшенная дом 19/8 офис 101, город Санкт-Петербург.",
 			"viewports": ["desktop", "tablet", "mobile"]
 		},
 
@@ -34,7 +33,6 @@ export default {
 			"width": 320,
 			"height": 373,
 			"maxdppx": 2,
-			"alt": "",
 			"viewports": ["desktop", "tablet", "mobile"]
 		},
 
@@ -43,7 +41,6 @@ export default {
 			"width": 260,
 			"height": 315,
 			"maxdppx": 2,
-			"alt": "",
 			"viewports": ["desktop", "tablet", "mobile"]
 		},
 
@@ -52,7 +49,6 @@ export default {
 			"width": 350,
 			"height": 457,
 			"maxdppx": 2,
-			"alt": "",
 			"viewports": ["tablet"]
 		},
 
@@ -61,7 +57,6 @@ export default {
 			"width": 260,
 			"height": 195,
 			"maxdppx": 2,
-			"alt": "Зайчик-попрыгайчик",
 			"viewports": ["desktop", "tablet", "mobile"]
 		},
 
@@ -70,7 +65,6 @@ export default {
 			"width": 260,
 			"height": 195,
 			"maxdppx": 2,
-			"alt": "Корзинка для белья",
 			"viewports": ["desktop", "tablet", "mobile"]
 		},
 
@@ -79,7 +73,6 @@ export default {
 			"width": 260,
 			"height": 195,
 			"maxdppx": 2,
-			"alt": "Большая корзинка для игрушек",
 			"viewports": ["desktop", "tablet", "mobile"]
 		},
 
@@ -88,7 +81,6 @@ export default {
 			"width": 260,
 			"height": 150,
 			"maxdppx": 2,
-			"alt": "Процесс производства",
 			"viewports": ["desktop", "tablet", "mobile"]
 		}
 	}

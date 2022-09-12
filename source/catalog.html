@@ -11,7 +11,7 @@
 				<h2 class="visually-hidden">Список товаров</h2>
 				<ul class="product__list">
 					<li class="product__item product-card ">
-						{% include "./templates/picture.twig" with {name: "catalog/product-1", class: "product-card__image"} %}
+						{% include "./templates/picture.twig" with {name: "catalog/product-1", class: "product-card__image", alt: "Зайчик-попрыгайчик."} %}
 						<div class="product-card__wrapper">
 							<h3 class="product-card__title product-title">
 								<a class="product-card__link" href="javascript:void(0)">Зайчик-попрыгайчик</a>
@@ -26,7 +26,7 @@
 						</div>
 					</li>
 					<li class="product__item product-card">
-						{% include "./templates/picture.twig" with {name: "catalog/product-2", class: "product-card__image"} %}
+						{% include "./templates/picture.twig" with {name: "catalog/product-2", class: "product-card__image", alt: "Корзинка для белья."} %}
 						<div class="product-card__wrapper">
 							<h3 class="product-card__title product-title">
 								<a class="product-card__link" href="javascript:void(0)">Корзинка для белья</a>
@@ -41,7 +41,7 @@
 						</div>
 					</li>
 					<li class="product__item product-card">
-						{% include "./templates/picture.twig" with {name: "catalog/product-3", class: "product-card__image"} %}
+						{% include "./templates/picture.twig" with {name: "catalog/product-3", class: "product-card__image", alt: "Корзинка для белья."} %}
 						<div class="product-card__wrapper product-card__wrapper--third">
 							<h3 class="product-card__title product-title">
 								<a class="product-card__link" href="javascript:void(0)">Большая корзинка для&nbsp;игрушек</a>
@@ -61,7 +61,7 @@
 						<h3 class="production__title product-title">Процесс производства</h3>
 					</div>
 					<div class="production__video">
-						{% include "./templates/picture.twig" with {name: "production-video", class: "production__video"} %}
+						{% include "./templates/picture.twig" with {name: "production-video", class: "production__video", alt: "Процесс производства."} %}
 						<button class="production__video-button"><span class="visually-hidden">Воспроизвести видео.</span></button>
 					</div>
 					<div class="production__container">
