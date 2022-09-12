@@ -4,8 +4,7 @@
 
 ```bash
 ./
-├── htmlacademy.svg 	# Иконка HTML Aкадемии
-├── sprite.svg			# Файл-пустышка для удобства
+├── htmlacademy.svg		# Иконка HTML Aкадемии
 ├── [*.svg]				# Другие файлы иконок
 └── README
 ```
