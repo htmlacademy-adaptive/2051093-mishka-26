@@ -28,5 +28,4 @@ buttonPrev.addEventListener("click", () => {
 			buttonNext.removeAttribute("disabled", "disabled");
 		}
 	}
-	console.log(number);
 })
