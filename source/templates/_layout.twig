@@ -18,7 +18,8 @@
 
 	{% include "./footer.twig" %}
 
-	{% include "./modal.twig" %}
+	{% if permalink != "form.html"%}{% include "./modal.twig" %}{% endif %}
+
 	<script src="./js/menu-toggle.js"></script>
 	<script src="./js/modal-open.js"></script>
 	<script src="./js/slider.js"></script>

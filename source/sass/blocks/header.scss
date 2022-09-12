@@ -2,7 +2,7 @@
 .header {
 	position: relative;
 	display: flex;
-	padding: 19px 0;
+	flex-direction: column;
 
 	a {
 		color: var(--main-color);
@@ -24,14 +24,13 @@
 }
 
 .header__logo {
-	position: absolute;
-	top: 22px;
-	left: 48%;
-	transform: translate(-48%);
+	align-self: center;
+	padding: 22px;
 
-
-	@media #{$tablet-only} {
-		left: 54px;
+	@media #{$not-mobile} {
+		position: absolute;
+		top: 22px;
+		padding: 0;
 	}
 
 	@media #{$desktop-only} {
@@ -42,9 +41,5 @@
 }
 
 .header__nav {
-	margin-left: auto;
-
-	@media #{$not-mobile} {
-		margin: 0;
-	}
+	width: 100%;
 }

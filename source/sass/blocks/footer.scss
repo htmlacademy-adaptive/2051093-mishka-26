@@ -68,6 +68,15 @@
 	&::after {
 		display: none;
 	}
+
+	&:hover {
+		--logo-color: #46c1ae;
+	}
+
+	&:active {
+		--logo-color: #46c1ae;
+		opacity: 0.3;
+	}
 }
 
 .footer__list {

@@ -61,12 +61,14 @@
 						<h3 class="production__title product-title">Процесс производства</h3>
 					</div>
 					<div class="production__video">
-						{% include "./templates/picture.twig" with {name: "production-video", class: "production__video", alt: "Процесс производства."} %}
-						<button class="production__video-button"><span class="visually-hidden">Воспроизвести видео.</span></button>
+						<a href="https://youtu.be/4JS70KB9GS0">
+							{% include "./templates/picture.twig" with {name: "production-video", class: "production__video", alt: "Процесс производства."} %}
+						</a>
+						<button class="production__video-button" type="button" aria-label="Воспроизвести видео"></button>
 					</div>
 					<div class="production__container">
 						<p class="production__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-						<button class="production__button button" type="button">Сделать заказ</button>
+						<a class="production__button button" href="form.html">Сделать заказ</a>
 					</div>
 				</div>
 			</div>
