@@ -17,6 +17,8 @@
 	flex-direction: column;
 	padding: 14px 0;
 
+	@include bg-image("review");
+
 	@media #{$not-mobile} {
 		display: grid;
 		grid-template-columns: auto 175px;
@@ -29,11 +31,9 @@
 			left: -50px;
 			width: 350px;
 			height: 457px;
-			background: no-repeat center / cover;
+			background: var(--bg-image) no-repeat center / cover;
 			content: "";
 			z-index: -1;
-
-			@include bg-adaptive(review, jpg);
 		}
 	}
 
