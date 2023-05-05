@@ -7,31 +7,42 @@ on:
 
 jobs:
   deploy:
+    name: Deploy
+
+    permissions:
+      contents: write
+
     runs-on: ubuntu-latest
 
     steps:
-      - name: Check Out
-        uses: actions/checkout@v2.4.0
+
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
         with:
-          persist-credentials: false
+          node-version-file: 'package.json'
 
-      - name: Setup Node
-        uses: actions/setup-node@v1
+      - name: Restore cache
+        uses: actions/cache@v3
         with:
-          node-version: "16.x"
+          path: /home/runner/.local/share/pnpm/store/v3
+          key: cache-pnpm-${{ hashFiles('./pnpn-lock.yaml') }}
+          restore-keys: cache-pnpm-
 
-      - name: Installing Dependencies
-        run: npm ci
+      - name: Install pnpm
+        run: corepack enable; corepack prepare pnpm@latest --activate
 
-      - name: Linting
-        run: npm run lint
+      - name: Install dependencies
+        run: pnpm i --ignore-scripts
 
-      - name: Building
+      - name: Build project
         run: npm run build
 
       - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@v4.2.2
+        uses: JamesIves/github-pages-deploy-action@v4
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
           folder: ./build
           branch: gh-pages
+          single-commit: true

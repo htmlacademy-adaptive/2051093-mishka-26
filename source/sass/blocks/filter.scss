@@ -22,61 +22,47 @@
 }
 
 .filter__input {
-	position: relative;
+	display: grid;
+	grid-template-areas: "input";
 	margin: 0;
 	appearance: none;
 
+	@media #{$not-mobile} {
+		--size: 50px;
+	}
+
+	@media #{$desktop-only} {
+		--vertical-shift: -1px;
+	}
+
+	&:hover {
+		--input-color: var(--accent-link-color);
+	}
+
+	&:active {
+		--input-color: var(--pale-active-color);
+	}
+
+	&:checked {
+		--has-tick: "";
+	}
+
 	&::before {
-		box-sizing: border-box;
 		content: "";
-		display: block;
-		width: 40px;
-		height: 40px;
-		border: 2px solid var(--base-color);
-
-		@media #{$not-mobile} {
-			width: 50px;
-			height: 50px;
-		}
-
-		@media #{$desktop-only} {
-			margin-top: -1px;
-		}
-	}
-
-	&:hover::before {
-		border-color: var(--accent-link-color);
-	}
-
-	&:active::before {
-		border-color: var(--pale-active-color);
+		box-sizing: border-box;
+		grid-area: input;
+		width: var(--size, 40px);
+		height: var(--size, 40px);
+		border: 2px solid var(--input-color, var(--base-color));
+		border-radius: var(--roundness, 0%);
 	}
 
 	&--radio {
-		&::before {
-			border-radius: 50%;
-		}
-
-		&:checked::after {
-			position: absolute;
-			top: 12px;
-			left: 12px;
-			width: 16px;
-			height: 16px;
-			background: var(--accent-link-color);
-			border-radius: 50%;
-			content: "";
-		}
+		--roundness: 50%;
+		--tick-icon: url("../../icons/stack.svg#tick-radio");
 
 		@media #{$not-mobile} {
 			margin-left: 3px;
-
-			&:checked::after {
-				top: 15px;
-				left: 15px;
-				width: 20px;
-				height: 20px;
-			}
 		}
 
 		@media #{$desktop-only} {
@@ -85,40 +71,25 @@
 	}
 
 	&--checkbox {
-		&::before {
-			width: 38px;
-			height: 38px;
+		--size: 38px;
+		--tick-paint: 2px solid var(--main-color);
+		--tick-icon: url("../../icons/stack.svg#tick-checkbox");
 
-			@media #{$not-mobile} {
-				width: 52px;
-				height: 52px;
-			}
-		}
-
-		&:checked::after {
-			position: absolute;
-			top: 9px;
-			left: 9px;
-			width: 19px;
-			height: 9px;
-			border-left: 2px solid var(--main-color);
-			border-bottom: 2px solid var(--main-color);
-			transform: rotate(-45deg);
-			content: "";
+		@media #{$not-mobile} {
+			--size: 52px;
 		}
 
 		@media #{$tablet-only} {
 			margin-top: 1px;
 			margin-left: -1px;
 		}
+	}
 
-		@media #{$not-mobile} {
-			&:checked::after {
-				top: 14px;
-				left: 12px;
-				width: 27px;
-				height: 13px;
-			}
-		}
+	&:checked::after {
+		content: var(--has-tick, none);
+		grid-area: input;
+		width: var(--size);
+		height: var(--size);
+		background: var(--tick-icon) no-repeat center / cover;
 	}
 }
